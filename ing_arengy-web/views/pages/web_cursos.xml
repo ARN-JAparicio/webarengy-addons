@@ -1,0 +1,282 @@
+<odoo>
+
+    <template id="page_cursos" name="Cursos ">
+     <t t-call="website.layout">
+            <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+        </style>
+
+
+         <div id="wrap" class="oe_structure oe_empty gris-claro">
+         <section class="s_banner parallax s_parallax_is_fixed pt96 pb96 o_colored_level"
+                  data-scroll-background-ratio="1" data-snippet="s_banner" data-name="Banner"
+                  style="background-image: none; height:720px;">
+             <span class="s_parallax_bg oe_img_bg"
+                   style="background-image: url('/ing_arengy-web/static/img/header-cursos.png'); background-position: 50% 0; "/>
+             <div class="container" style="margin-left: 0 !important; padding-left:0 !important;">
+                 <div class="row s_nb_column_fixed">
+                     <div class="col-lg-6 jumbotron  o_anim_fade_in o_animate o_anim_from_left rounded o_cc o_cc1 pt32 pb32 gradient-soluciones o_colored_level" data-name="Box">
+                         <h1 class="color-letra orbitron text-center">
+                             <font class="color-letra orbitron   " >Cursos</font>
+                             <br/>
+                         </h1>
+                         <p class="lead">
+                             <br/>
+                         </p>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+          <div  class="busqueda-desk" style="margin-bottom:50px; margin-top:50px;">
+              <form action="/filter"
+                    class="o_searchbar_form o_wait_lazy_js s_searchbar_input ing_search_form">
+
+                  <div class=" container row  " style="margin: 0 auto;">
+                      <div class="col-lg-9" style="display:flex;">
+
+                              <input name="filter" class="'search-query form-control %s' % _input_classes"
+                                     placeholder="Buscar por titulo"></input>
+
+
+                          <button type="submit"
+                                  class="btn ml-0 background-azul  btn-cursos color-letra "
+                          >
+                              Buscar
+                          </button>
+                      </div>
+                      <div class="col-lg-3" style="display:flex; justify-content: space-around;">
+                          <div>
+                              <div>
+                                  <button name="tipo"
+                                          value="curso"
+                                          class="btn btn-cursos  background-azul color-letra p-2"
+                                          style="border-radius:5px; max-width:119px;">
+                                      Cursos
+                                  </button>
+                              </div>
+                          </div>
+
+                          <div>
+                              <button name="tipo"
+                                       class="btn   btn-cursos background-azul color-letra p-2"
+                                      title="Certificaciones"
+                                      style="border-radius:5px; max-width:184px; "
+                                      value="certificacion"
+
+                                      >
+                                  Certificaciones
+                              </button>
+                          </div>
+                     </div>
+
+                      <t t-set="action" t-value="'/filter','tipo'"/>
+                  </div>
+
+              </form>
+
+
+
+        </div>
+
+
+<!--    todo:      ################   VISTA MOBIL DEL SEARCH################### -->
+
+               <div class="busqueda-mobil" style="margin-bottom:50px; margin-top:50px;">
+              <form action="/filter"
+                    class="o_searchbar_form o_wait_lazy_js s_searchbar_input ing_search_form">
+
+                  <div class=" row  " style="margin: 0 auto;">
+                      <div class="col-lg-9" style="display:flex;">
+
+                              <input name="filter" class="'search-query form-control %s' % _input_classes"
+                                     placeholder="Buscar por titulo"></input>
+
+
+                          <button type="submit"
+                                  class="btn ml-0 background-azul  btn-cursos color-letra "
+                          >
+                              Buscar
+                          </button>
+                      </div>
+
+
+                      <t t-set="action" t-value="'/filter','tipo'"/>
+                  </div>
+
+              </form>
+
+
+
+        </div>
+
+
+             <!--    todo:      ################  FIN VISTA MOBIL DEL SEARCH################### -->
+
+
+
+
+
+
+
+
+<!--    ##########DIV CONTENEDOR DE LAS DOS COLUMNAS######-->
+
+             <div class="container row" style="margin: 0 auto;">
+                 <div class=" col-lg-9">
+
+
+                     <div class="flex_cursos col-lg-12 s_media_list_item" style="margin-bottom:20px;">
+
+                         <h5 class="azul-energy">Cursos </h5>
+                          <form action="/ver_mas">
+                <button name="cargar"
+                                         value="True"
+                                         class="azul-energy"
+                                         style="background:none; border:none;">
+                    Ver todo
+                    </button>
+
+                    <t t-set="action" t-value="'/ver_mas','cargar'"/>
+                </form>
+
+
+
+
+
+
+                     </div>
+
+
+
+                     <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                           <hr class="w-100 mx-auto azul-energy" style="border-top-width: 1px; border-top-style: solid;"/>
+                         <t t-set="cursos" t-value="cursos_list"/>
+                         <t t-foreach="cursos" t-as="curso">
+                            <t t-if="cursos_list == [] ">
+                                <p> No hay cursos</p>
+                            </t>
+
+                             <div class="col-lg-12 s_media_list_item  o_anim_fade_in o_animate o_visible o_anim_from_bottom container-curso"   data-name="Media item">
+                                 <a t-attf-href="/cursos/#{slug(curso)}" style="text-decoration:none;">
+                                     <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
+                                          style="border-radius: 10px;">
+                                         <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                             <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
+                                                  class="s_media_list_img " alt="" loading="lazy"
+                                                  data-original-id="65"
+                                                  t-attf-src="data:image/jpg;base64,{{curso.image}}"
+
+                                                  data-mimetype="image/jpeg"/>
+                                         </div>
+
+                                         <div class="col-lg-8 s_media_list_body" style="padding-left:20px;">
+                                             <h3  class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso " style="max-height:2.5em; overflow:hidden;" t-esc="curso.name">
+                                                 Acontecimientos
+                                             </h3>
+                                             <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
+                                             <!--                                                    t-esc="curso.name"></h4>-->
+                                             <p class="o_default_snippet_text overflow-mobil overflow-text " t-esc="curso.texto_corto">
+
+                                             </p>
+
+                                             <p class="o_default_snippet_text overflow-categoria  ">
+                                                 <span t-foreach="curso.categoria_ids"  class="categoria color-letra" t-as="categoria">
+                                                     <t t-esc="categoria.name"/>
+
+                                                 </span>
+                                             </p>
+
+
+                                             <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
+                                         </div>
+                                     </div>
+                                 </a>
+                             </div>
+                         </t>
+                     </div>
+                 </div>
+
+
+
+
+
+                 <div class="col-lg-3">
+                     <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                         <h5 class="azul-energy">Logros recientes</h5>
+                         <div class="col-lg-12  o_anim_fade_in o_animate o_visible o_anim_from_bottom gris-claro s_media_list_item pt16 pb16" data-name="Media item">
+                             <div class="flex_logros s_col_no_resize  gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
+                                 <div class="col-lg-4   align-self-stretch s_media_list_img_wrapper">
+                                     <img src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                          class="s_media_list_img img-mobil h-100 " alt="" loading="lazy"
+                                          data-original-id="65"
+                                          data-original-src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                          data-mimetype="image/jpeg"/>
+                                 </div>
+                                 <div class="col-lg-8 s_media_list_body">
+
+                                     <p class="o_default_snippet_text azul-energy"><span>Richard Wilson</span> logrado Empezar
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-12 o_anim_fade_in o_animate o_visible o_anim_from_bottom s_media_list_item gris-claro pt16 pb16" data-name="Media item">
+                             <div class="flex_logros s_col_no_resize gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
+                                 <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                     <img src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                          class="s_media_list_img img-mobil h-100 " alt="" loading="lazy"
+                                          data-original-id="66"
+                                          data-original-src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                          data-mimetype="image/jpeg"/>
+                                 </div>
+                                 <div class="col-lg-8 s_media_list_body">
+                                    <p class="o_default_snippet_text azul-energy"><span>Richard Wilson</span> logrado Empezar
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-lg-12 o_anim_fade_in o_animate o_visible o_anim_from_bottom s_media_list_item pt16 pb16" data-name="Media item">
+                             <div class="flex_logros s_col_no_resize  gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
+                                 <div class="col-lg-4 align-self-stretch gris-claro s_media_list_img_wrapper">
+                                     <img src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                          class="s_media_list_img h-100 img-mobil" alt="" loading="lazy"
+                                          data-original-id="67"
+                                          data-original-src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                          data-mimetype="image/jpeg"/>
+                                 </div>
+                                 <div class="col-lg-8 s_media_list_body">
+                                      <p class="o_default_snippet_text azul-energy"><span>Richard Wilson</span> logrado Empezar
+                                     </p>
+
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+
+         <div class="">
+             <div class="centrado gris-claro">
+
+
+                 <t t-call="website.pager"/>
+             </div>
+         </div>
+
+     </t>
+    </template>
+
+
+       <record id="page_cursos_arengy" model="website.page">
+        <field name="name">Cursos </field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="url">/cursos</field>
+        <field name="view_id" ref="page_cursos"/>
+    </record>
+
+
+</odoo>

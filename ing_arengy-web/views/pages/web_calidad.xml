@@ -1,0 +1,118 @@
+<odoo>
+
+    <template id="page_calidad" name="Politica de calidad">
+     <t t-call="website.layout">
+
+         <style>
+             @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+         </style>
+
+
+         <div id="wrap" class="oe_structure oe_empty background-calidad" >
+             <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title"
+                      data-name="Título" style="background-image: none;">
+                 <div class="container s_allow_columns">
+                     <h1 style="text-align: center;" class="color-letra orbitron o_animate o_anim_zoom_in">
+                         <font style="font-size: 62px; ">Politica de calidad</font>
+                         <br/>
+                     </h1>
+                 </div>
+             </section>
+             <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Texto"
+                      style="background-image: none;">
+                 <div class="container s_allow_columns">
+                     <p class="color-letra">
+                       <br/>ARENGY, como líder en la provisión de servicios de ingeniería,
+                         consultoría y desarrollo de sistemas, se compromete a ofrecer soluciones innovadoras y de alta
+                         calidad a nuestros clientes y partners, siguiendo nuestra misión de contribuir al crecimiento y
+                         desarrollo sostenible de la industria y las comunidades en las que operamos.
+                         <br/>
+                         <br/>Nuestra política de calidad se basa en los siguientes compromisos, alineados con nuestros
+                         valores fundamentales, misión y visión:
+                         <br/>
+
+                         <ul styile="list-style-type: disc;" class="color-letra lista_calidad">
+                             <li>Compromiso con la excelencia en el servicio: Entendemos que el éxito de nuestra empresa
+                                 depende de la satisfacción de nuestros clientes y partners. Por lo tanto, nos
+                                 esforzamos por superar sus expectativas, proporcionando soluciones efectivas y
+                                 personalizadas que se adapten a sus necesidades específicas.
+                             </li>
+                             <li>Mejora continua: Estamos comprometidos con la mejora continua de nuestros procesos,
+                                 productos y servicios, mediante la identificación y aplicación de oportunidades de
+                                 mejora y la adopción de las mejores prácticas de la industria.
+                             </li>
+                             <li>Innovación y adaptabilidad: Fomentamos un entorno de innovación y adaptabilidad,
+                                 permitiendo a nuestra empresa mantenerse a la vanguardia en un mercado en constante
+                                 cambio y ofrecer soluciones de vanguardia a nuestros clientes y partners.
+                             </li>
+                             <li>Desarrollo de nuestro equipo humano: Valoramos a nuestros empleados y profesionales
+                                 independientes como nuestro activo más importante. Nos comprometemos a proporcionarles
+                                 oportunidades de desarrollo y crecimiento profesional, así como a mantener un entorno
+                                 de trabajo seguro, inclusivo y colaborativo.
+                             </li>
+                             <li>Cumplimiento de requisitos legales y regulatorios: Aseguramos el cumplimiento de todas
+                                 las leyes, regulaciones y normas aplicables, incluida el estándar ISO 9001, y nos
+                                 esforzamos por mantener nuestras certificaciones y acreditaciones en el ámbito de la
+                                 calidad.
+                             </li>
+                             <li>Gestión y reducción de riesgos: Implementamos prácticas de gestión de riesgos para
+                                 identificar, evaluar y abordar proactivamente los riesgos asociados con nuestras
+                                 operaciones, garantizando la estabilidad y sostenibilidad de nuestro negocio.
+                             </li>
+                             <li>Compromiso con la sostenibilidad y responsabilidad social: Somos conscientes de nuestro
+                                 papel en la protección del medio ambiente y en la promoción del bienestar social.
+                                 Incorporamos prácticas sostenibles y socialmente responsables en todas nuestras
+                                 actividades y trabajamos con nuestros clientes, partners y proveedores para garantizar
+                                 un impacto positivo en nuestras comunidades y en el entorno.
+                             </li>
+                             <li>La Dirección de ARENGY se compromete a liderar el cumplimiento de esta política de
+                                 calidad y a garantizar que todos los empleados, proveedores estratégicos y
+                                 profesionales independientes estén alineados con nuestros valores y objetivos.
+                                 Revisamos y actualizamos periódicamente nuestra política de calidad para asegurar su
+                                 relevancia y eficacia en el logro de nuestros objetivos de calidad y el éxito a largo
+                                 plazo de nuestra organización.
+                             </li>
+                             <li>Cumplir con todos los requisitos aplicables, incluidos los legales y reglamentarios,
+                                 así como los requisitos del cliente y de las partes interesadas.
+                             </li>
+                             <li>Mejorar continuamente la eficacia y eficiencia del Sistema de Gestión de Calidad (SGC),
+                                 enfocándose en la prevención de no conformidades y en la identificación y corrección de
+                                 áreas de mejora.
+                             </li>
+                             <li>Establecer y revisar periódicamente los objetivos de calidad para garantizar su
+                                 alineación con la estrategia y el contexto de la empresa.
+                             </li>
+                             <li>Proporcionar los recursos necesarios, incluida la capacitación del personal, para
+                                 garantizar la competencia y la concienciación sobre la importancia de la calidad en
+                                 todos los niveles de la organización.
+                             </li>
+                             <li>Fomentar la comunicación abierta y la colaboración entre empleados, clientes,
+                                 proveedores y otras partes interesadas para garantizar la calidad y la mejora continua.
+                             </li>
+                             <li>Asegurar que la política de calidad sea comunicada, entendida y aplicada en toda la
+                                 organización.
+                             </li>
+                         </ul>
+                     </p>
+
+                    <div class="text-center"><a href="#" class="btn  mb-2 o_default_snippet_text azul-energy" style="background:white;">Acceso a la documentacion del SGC →</a></div>
+
+                 </div>
+             </section>
+
+
+         </div>
+
+
+     </t>
+    </template>
+
+
+     <record id="page_calidad_arengy" model="website.page">
+        <field name="name">Politica de calidad </field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="url">/calidad</field>
+        <field name="view_id" ref="page_calidad"/>
+    </record>
+</odoo>

@@ -1,0 +1,542 @@
+
+
+/*
+ #################################  COLORES Y FUENTES   ##########################
+*/
+.btn:hover{
+
+color: white !important;
+}
+
+.background-azul{
+background-color : #304091;
+}
+
+.o_footer_copyright{
+display: none !important;
+}
+
+.azul-energy{
+color : #304091 !important;
+}
+.gris-claro{
+background-color: #F4F4FF !important;
+
+}
+
+.color-letra{
+color: white;
+}
+
+
+/*
+ ################################################################################
+*/
+
+
+
+
+
+/*
+ #################################  HOME  ##########################
+*/
+
+.cuadrado{
+width: 23px;
+height: 23px;
+
+}
+.general-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;}
+
+.flex-localizacion{
+display:flex !important;
+padding-left:20px;
+}
+
+.card_ing{
+display: flex;
+ flex-direction: column;
+   justify-content: space-between;
+
+}
+
+.card-external-radius{
+border-radius: 25px 0 15px 15px ;
+border-color: none;
+}
+
+.card-border-radius{
+border-radius: 25px 0 25px 0;
+}
+.min-card{
+height: 393px;
+
+width: 331px;
+}
+.img-size{
+height : 107px;
+width: 107px;
+}
+.centrado{
+display: flex;
+  justify-content: center;
+ align-items: center;
+}
+
+.padding_soluciones{
+
+padding: 0;
+
+}
+
+
+
+.section_img{
+height:850px;
+padding-top: 10px !important;
+}
+
+.card_posicion{
+display: flex;
+justify-content: center;
+column-gap: 50px;
+}
+.card_size{
+height: 286px;
+width: 284px;
+
+}
+
+.background_gradient{
+background: linear-gradient(to right, #1A568A, #1F1B50) !important;
+}
+.gradient-soluciones{
+background: linear-gradient(to right, rgba(26, 86, 138, 0.85), rgba(31, 27, 80, 0.85) ) !important;
+}
+
+.img-num-size{
+height:70px;
+width: 70px;
+}
+.img-thumbnail {
+border-style: none !important;
+}
+.orbitron {
+font-family: 'Orbitron', sans-serif !important;
+}
+
+.no_list{
+list_style : none !important;
+
+}
+.btn_carousel{
+background: none;
+border-color: white;
+}
+.seccion2 {
+
+    background: none;
+    top: 25%; /* Coloca la parte superior de la segunda sección en el centro vertical de la primera sección */
+
+    transform: translateY(-30%) !important; /* Alinea verticalmente el centro de la segunda sección con el centro de la primera sección */
+    z-index: 2; /* Asegura que la segunda sección esté sobre la primera */
+     transition: transform 2.5s ease ;
+}
+
+.slide_in_up{
+
+    background: none;
+    transform: translateY(100%);
+    animation: slideInUp 5s forwards;
+    }
+
+
+@keyframes slideInUp {
+    to {
+        transform: translateY(-30%);
+    }
+}
+.slide_in_left{
+transform: translateX(-100%);
+    animation: slideInLeft 5s forwards;
+}
+@keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide_in_right{
+transform: translateX(100%);
+    animation: slideInRight 5s forwards;
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.img_zoom:hover{
+transition: transform 0.3s ease;
+transform: scale(1.1);
+}
+
+.logo_footer{
+height: 77px;
+width: 221px;
+}
+.linea{
+height: 1px;
+width: 100%;
+}
+.footer_contacto{
+border-bottom : 1px solid;
+padding-bottom: 5px;
+
+
+}
+
+
+
+.footer_container{
+margin-left: 0 !important;
+}
+
+.row_footer
+{
+display: flex;
+  justify-content: space-between !important;
+
+}
+.link_footer{
+text-decoration:none !important;
+color:white !important;
+
+}
+.link_footer:hover{
+color:white;
+}
+.btn_cta{
+background-color: #304091 !important;
+}
+/*
+ ######################################################### FIN HOME  ################# ##########################
+*/
+
+
+
+/*
+ #########################################################FORMULARIO DE CONTACTO ##########################
+*/
+
+.background-contacto{
+background-image: url("/ing_arengy-web/static/img/Fondo.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.flex_contacto{
+display:flex !important;
+justify-content: space-around !important;
+column-gap:1%;
+}
+.card-contacto{
+width: 340px;
+height: 223px;
+padding-top: 0px !important;
+}
+
+.shadow-contacto{
+box-shadow: 0 5px 0 #304091 ;
+}
+
+.border-contacto{
+  border-radius: 10px 10px 0 0;
+}
+.size-contacto{
+width: 340px;
+height: 66px;
+}
+
+.container_contacto{
+padding-left: 10%;
+}
+/*
+ ###############################################FIN FORMULARIO ###################################
+*/
+
+
+/*
+ ############################################### WEB SOLUCIONES  ###################################
+*/
+
+
+.btn_busqueda{
+margin-left: 10px !important;
+margin-right: 10xp !important;
+height: 66px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
+
+}
+.card_podria_interesar{
+width:340px;
+height:335px;
+border-radius: 12px !important;
+}
+body .page-item a {
+    background-color:  #304091 !important;
+    color:white !important
+}
+body .disabled a {
+    background-color: rgba(182, 189, 228, 1) !important;
+    color:white !important
+}
+
+.pager{
+
+margin-top:20px;
+margin-bottom:20px;
+}
+
+
+.lista_calidad li{
+
+padding-bottom: 10px !important;
+
+}
+
+
+
+
+
+/*
+ ############################################### FIN WEB  SOLUCIONES  ###################################
+*/
+
+/*
+ ############################################### CURSOS web  ###################################
+*/
+
+.btn-cursos{
+height:66px;
+width:148px;
+}
+
+
+.flex_logros{
+display:flex;
+justify-content:space-between;
+}
+
+.container-curso{
+    overflow: hidden !important;
+    height: 256px !important;
+    width: 739px !important;
+
+    padding-bottom: 15px ! important;
+}
+
+.overflow-text{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+
+.categoria{
+    background:#1B578B;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
+.max-height-curso{
+max-height: 2.5 em !important;
+white-space: normal;
+text-overflow: elipsis;
+}
+
+.flex_cursos{
+display:flex;
+justify-content: space-between;
+}
+
+
+
+/*
+ ##########################################################################################
+*/
+
+
+.background-calidad{
+
+background-image: url("/ing_arengy-web/static/img/Fondo-calidad.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;}
+
+
+
+/*
+  Estilos para vista de mobil
+*/
+
+
+@media only screen and (max-width: 750px) {
+.busqueda-desk{
+
+display:none;
+}
+
+.size-mobil-h1{
+
+}
+
+.size-contacto{
+width:100%;
+
+}
+
+.btn_busqueda{
+height:40px;
+width: auto;
+margin-left: 2px !important;
+margin-right: 2xp !important;
+
+padding: 0px !important;
+
+
+
+}
+.btn_matricula{
+height:auto
+width: auto;
+margin-left: 2px !important;
+margin-right: 2xp !important;
+margin-bottom: 20px;
+
+padding: 0px !important;
+
+
+
+}
+
+.btn_busqueda_mobil{
+
+
+}
+.btn-cursos{
+height: auto;
+width: auto;
+}
+
+.img-mobil{
+height: 50px !important;
+
+}
+
+
+
+.mobil-flex{
+
+display:flex !important;
+justify-content: space-around !important;
+
+
+}
+.columns-mobil{
+
+display:none !important;
+}
+.overflow-categoria{
+overflow: hidden;
+text-align:center;
+padding-bottom: 10px;
+
+}
+.overflow-mobil{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+
+
+.slide_in_up{
+   display:none !important;
+   }
+   .footer_container{
+   text-align:center !important;
+   }
+
+   .texto-centrado{
+    text-align:center;
+    }
+
+    .flex_contacto{
+
+        display:block !important;
+    }
+    .container_contacto{
+    padding: 0 !important}
+
+    .desk_localizacion{
+    display: none;
+    }
+
+    .container-curso{
+    height:auto !important;
+    width:auto !important;
+    }
+
+    .card_podria_interesar{
+    width:auto !important;
+    height: auto !important;
+    }
+
+}
+
+
+
+/*
+ #########################################################Estlos para vista pc ##########################
+*/
+
+@media only screen and (min-width: 750px) {
+
+.busqueda-mobil{
+
+display:none;
+}
+
+    .mobil-columns{
+    display: none !important;
+    }
+    .mobil_localizacion{
+    display:none;
+    }
+
+
+  .slide_in_up_mobil{
+    display:none !important;
+    background: none;
+
+    transform: translateY(0) !important;
+    animation: slideInUp 5s forwards !important;
+    }
+
+
+@keyframes slide_in_up_mobil {
+    to {
+        transform: translateY(0) !important;
+    }
+}
+
+}
+
+
+
+

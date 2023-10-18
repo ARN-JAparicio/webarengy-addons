@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <!--TREE VIEW-->
+        <record id="post_tree" model="ir.ui.view">
+            <field name="name">ing.post.tree</field>
+            <field name="model">ing.post</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="post_form" model="ir.ui.view">
+            <field name="name">ing.post.form</field>
+            <field name="model">ing.post</field>
+            <field name="arch" type="xml">
+                <form string="Post">
+                    <sheet>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>
+                                    <group>
+                                        <field name="name" placeholder="Ingrese el Titulo"/>
+                                    </group>
+                                </h1>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <group>
+                                    <field name="inner_image"/>
+                                </group>
+                            </div>
+                            <div class="col-md-6">
+                                <group>
+                                    <field name="image"/>
+                                </group>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <group>
+                                    <field name="desc"/>
+                                </group>
+                            </div>
+                        </div>
+
+                         <div class="row">
+                            <div class="col-md-12">
+                                <group>
+                                    <field name="categoria_ids"/>
+                                </group>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <group>
+                                    <field name="moneda"/>
+                                </group>
+                            </div>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--ACTION-->
+        <record model="ir.actions.act_window" id="ing_post_action">
+            <field name="name">Post</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">ing.post</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Gestión de <strong>Post</strong>.
+                </p>
+            </field>
+        </record>
+
+        <!-- MENU -->
+
+
+
+    </data>
+</odoo>

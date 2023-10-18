@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+    <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carrusel">
+        <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000" id="myCarousel1695909670346" style="background-image: none;">
+
+            <ol class="carousel-indicators o_we_no_overlay">
+                <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1695909670346"/>
+                <li data-bs-slide-to="1" data-bs-target="#myCarousel1695909670346"/>
+                <li data-bs-slide-to="2" data-bs-target="#myCarousel1695909670346"/>
+            </ol>
+
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item pt152 pb152 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+                    <div class="container oe_unremovable">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-6 o_colored_level">
+                                 <h2><font style="font-size: 62px;" class="o_default_snippet_text">Título de diapositiva</font></h2>
+                                <p class="lead o_default_snippet_text">Utilice este fragmento para presentar su contenido en un formato de presentación de diapositivas. No escriba sobre productos o servicios aquí, escriba sobre soluciones.</p>
+                                <p>
+                                    <a href="/contactus" class="btn btn-primary mb-2 o_default_snippet_text">Contáctenos</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+                    <div class="container oe_unremovable">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40 o_colored_level">
+                                <h2 style="font-size: 62px;" class="o_default_snippet_text">Lema inteligente</h2>
+                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                    <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                                </div>
+                                <p class="lead o_default_snippet_text">La narración de historias es poderosa.<br/> Atrae a los lectores y los involucra.</p>
+                                <p><a href="/" class="btn btn-primary mb-2 o_default_snippet_text">Comience su trayecto</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item pt128 pb128 oe_img_bg o_bg_img_center o_colored_level" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);" data-name="Slide">
+                    <div class="container oe_unremovable">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-6 offset-lg-6 o_colored_level">
+                                <h2><font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Edita este título</font></h2>
+                                <h4><font style="background-color: rgb(255, 255, 255);" class="o_default_snippet_text">La buena escritura es simple, pero no simplista.</font></h4>
+                                <p><br/></p>
+                                <p class="o_default_snippet_text">Una buena copia comienza con la comprensión de cómo su producto o servicio ayuda a sus clientes. Las palabras simples se comunican mejor que las palabras grandes y el lenguaje pomposo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Anterior" title="Anterior" href="#myCarousel1695909670346">
+                <span class="carousel-control-prev-icon"/>
+                <span class="visually-hidden o_default_snippet_text">Previous</span>
+            </a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Siguiente" title="Siguiente" href="#myCarousel1695909670346">
+                <span class="carousel-control-next-icon"/>
+                <span class="visually-hidden o_default_snippet_text">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carrusel">
+        <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000" id="myCarousel1695909670346" style="background-image: none;">
+            <ol class="carousel-indicators o_we_no_overlay"/>
+            <div class="carousel-inner"/>
+        </div>
+        <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Anterior" title="Anterior" href="#myCarousel1695909670346">
+                <span class="carousel-control-prev-icon"/>
+                <span class="visually-hidden o_default_snippet_text">Previous</span>
+        </a>
+        <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Siguiente" title="Siguiente" href="#myCarousel1695909670346">
+            <span class="carousel-control-next-icon"/>
+            <span class="visually-hidden o_default_snippet_text">Next</span>
+        </a>
+    </section>
+</template>

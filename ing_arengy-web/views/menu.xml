@@ -1,0 +1,36 @@
+<odoo>
+     <data>
+<!--        <menuitem id="menu_arengy" name="MENU ARENGY" sequence="1"/>-->
+
+         <menuitem id="ing_arengy" name="ARENGY" sequence="8"/>
+
+
+
+
+         <menuitem id="ing_post_ing" name="POST" action="ing_post_action" parent="ing_arengy" sequence="20"/>
+
+
+        <record id="menu_solucion" model="website.menu">
+            <field name="name">Soluciones</field>
+            <field name="url">/solucion</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+         <record id="menu_cursos" model="website.menu">
+            <field name="name">Cursos</field>
+            <field name="url">/cursos</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+          <record id="menu_novedades" model="website.menu">
+            <field name="name">Novedades</field>
+            <field name="url">/novedades</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">10</field>
+        </record>
+
+
+     </data>
+</odoo>

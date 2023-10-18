@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+post, Arengy - post,model_ing_post,ing_arengy-web.group_arengy,1,1,1,1
+curso, Arengy - curso,model_ing_curso,ing_arengy-web.group_arengy,1,1,1,1
+categoria, Arengy - categoria,model_ing_categoria,ing_arengy-web.group_arengy,1,1,1,1
+novedad, Arengy - novedad,model_ing_novedad,ing_arengy-web.group_arengy,1,1,1,1
+
+post_public_user, Arengy - post public user,model_ing_post,base.group_public,1,0,0,0
+curso_public_user, Arengy - curso public user,model_ing_curso,base.group_public,1,0,0,0
+categoria_public_user, Arengy - categoria public user,model_ing_categoria,base.group_public,1,0,0,0
+novedad_public_user, Arengy - novedad public user,model_ing_novedad,base.group_public,1,0,0,0
+

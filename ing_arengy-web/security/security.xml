@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_arengy" model="res.groups">
+            <field name="name">Arengy</field>
+            <field name="comment">Usuario de Arengy</field>
+        </record>
+    </data>
+</odoo>

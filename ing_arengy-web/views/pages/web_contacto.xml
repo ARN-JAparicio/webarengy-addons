@@ -1,0 +1,300 @@
+<odoo>
+
+    <template id="ing_contacto" name="contacto_anergy" >
+        <t name="Contact Us" t-name="website.contactus">
+        <t t-call="website.layout">
+             <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+        </style>
+
+            <t t-set="logged_partner" t-value="request.env['website.visitor']._get_visitor_from_request().partner_id"/>
+            <t t-set="contactus_form_values" t-value="{                 'email_to': res_company.email,                 'name': request.params.get('name', ''),                 'phone': request.params.get('phone', ''),                 'email_from': request.params.get('email_from', ''),                 'company': request.params.get('company', ''),                 'subject': request.params.get('subject', ''),             }"/>
+            <span class="hidden" data-for="contactus_form" t-att-data-values="contactus_form_values"/>
+
+
+            <div class="background-contacto">
+                <div id="wrap" class="oe_structure oe_empty ">
+                    <section class="s_title o_animate o_visible o_anim_zoom_in pt40 o_colored_level pb0" data-vcss="001" data-snippet="s_title"
+                             data-name="Título" style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <h1 style="text-align: center;" class="color-letra orbitron">
+                                <font>Contáctenos</font>
+                            </h1>
+                        </div>
+
+
+                    </section>
+                    <section class="s_text_block  o_animate o_visible o_anim_zoom_in o_colored_level pt0" data-snippet="s_text_block" data-name="Texto"
+                             style="background-image: none;">
+                        <div class="container s_allow_columns">
+                            <p class="o_default_snippet_text color-letra" style="text-align: center;">Si tiene dudas o
+                                consultas escribanos y le responderemos a la brevedad
+                            </p>
+                        </div>
+                    </section>
+
+                <section class="s_text_block pt40 o_anim_fade_in o_animate o_visible o_anim_from_bottom pb40 o_colored_level"  data-snippet="s_text_block" data-name="Texto" style="background-image: none;">
+                    <div class="s_allow_columns o_container_preview container">
+                        <div class="row ">
+
+
+                            <div class="mt-4 mt-lg-0 o_colored_level offset-lg-2 col-lg-8" style="">
+
+                                <section class="s_website_form" data-vcss="001" data-snippet="s_website_form" data-name="Formulario">
+                                    <div class="container">
+                                        <form id="contactus_form" action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-pre-fill="true">
+
+<!--                                            comienzo de div-->
+
+                                            <div class="s_website_form_rows row s_col_no_bgcolor">
+                                                <div class="flex_contacto">
+
+
+                                                <div class=" container">
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="char" data-name="Field" data-visibility-condition="" data-visibility-between="">
+
+
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact1">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Name</span>-->
+<!--                                                                <span class="s_website_form_mark color-letra"> *</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <input id="contact1" type="text" placeholder="Nombre" class="form-control  size-contacto s_website_form_input shadow-contacto border-contacto" name="name" required="" data-fill-with="name"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+<!--                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">-->
+<!--                                                        <div class="row s_col_no_resize s_col_no_bgcolor">-->
+<!--&lt;!&ndash;                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                <span class="s_website_form_label_content color-letra">Número de teléfono</span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            </label>&ndash;&gt;-->
+<!--                                                            <div class="col-sm">-->
+<!--                                                                <input id="contact7" type="text" class="form-control s_website_form_input"  data-fill-with="Field" placeholder="Apellido"/>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+
+<!--                                                    Telefono-->
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact2">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Número de teléfono</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <input id="contact2" type="tel" class="form-control size-contacto s_website_form_input shadow-contacto border-contacto" name="phone" data-fill-with="phone" placeholder="Telefono"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                       <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact4">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Company</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <input id="contact4" type="text"  placeholder="Empresa" class="form-control size-contacto s_website_form_input border-contacto  shadow-contacto" name="company" data-fill-with="commercial_company_name"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+<!--                                            fin div-->
+
+<!--                                                segundo div-->
+                                                <div class="container_contacto">
+
+<!--                                                    APELLIDO-->
+                                                         <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom" data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact2">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Número de teléfono</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <input id="contact7" type="text" class="form-control s_website_form_input size-contacto shadow-contacto border-contacto"  data-fill-with="Field" placeholder="Apellido"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+<!--                                                    EMAIL -->
+                                                     <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required" data-type="email" data-name="Field" data-visibility-condition="" data-visibility-between="">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact3">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Email</span>-->
+<!--                                                                <span class="s_website_form_mark color-letra"> *</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <input id="contact3" type="email" placeholder="Correo electronico" class="form-control size-contacto border-contacto s_website_form_input shadow-contacto" name="email_from" required="" data-fill-with="email"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required" data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact5">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Asunto</span>-->
+<!--                                                                <span class="s_website_form_mark color-letra"> *</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <input id="contact5" type="text" placeholder="Asunto" class="form-control size-contacto border-contacto s_website_form_input shadow-contacto" name="subject" required=""/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+<!--                                                FIN SEGUNDO DIV-->
+                                            </div>
+
+                                                <div class="s_website_form_field mb-3 col-12    s_website_form_dnone" data-name="Field">
+                                                <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                 <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px">
+
+
+                                                        <span class="s_website_form_label_content"/>
+
+
+
+
+                                                 </label>
+                                                <div class="col-sm">
+
+                                                <input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/>
+
+
+                                                    <div class="s_website_form_field_description small form-text text-muted">
+                                                        Separar las direcciones de correo electrónico con una coma.
+                                                    </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                 <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+<!--                                                            <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="contact6">-->
+<!--                                                                <span class="s_website_form_label_content color-letra">Question</span>-->
+<!--                                                                <span class="s_website_form_mark color-letra"> *</span>-->
+<!--                                                            </label>-->
+                                                            <div class="col-sm">
+                                                                <textarea id="contact6" placeholder="Mensaje" style="height:194px;" class="form-control border-contacto shadow-contacto s_website_form_input" name="description" required=""/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                <div class="mb-0 py-2 col-12 s_website_form_submit" style="text-align:center; " data-name="Submit Button">
+                                                                                                <div style="width: 200px;" />
+                                                                                                <a  href="#" role="button" class="btn background-azul color-letra btn-lg s_website_form_send">Enviar →</a>
+                                                                                                <span id="s_website_form_result"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="s_three_columns  o_anim_fade_in o_animate o_visible o_anim_from_bottom pt32 o_colored_level pb240" data-vcss="001"
+                         data-snippet="s_three_columns" data-name="Columnas" style="background-image: none;">
+                    <div class="container">
+                        <div class="row centrado">
+                              <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card-contacto">
+                                <div class="card text-bg-white h-100 " style="">
+
+
+                                    <div class=" h-50 centrado">
+
+                                        <img src="ing_arengy-web/static/Iconos/Teléfono - contacto.svg" class="img-num-size"/>
+
+                                    </div>
+                                    <div class="card-body pt-0 h-50">
+                                        <h5 class="azul-energy text-center orbitron">Teléfono</h5>
+
+                                        <p class="card-text azul-energy o_default_snippet_text text-center">+54 119 3267 9870
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                              <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card-contacto">
+                                <div class="card text-bg-white h-100  " style="">
+
+
+                                    <div class=" h-50 centrado">
+
+                                        <img src="ing_arengy-web/static/Iconos/Mail - contacto.svg" class="img-num-size"/>
+
+                                    </div>
+                                    <div class="card-body h-50 pt-0">
+                                        <h5 class="azul-energy text-center orbitron">Correo electrónico</h5>
+
+                                        <p class="card-text  azul-energy o_default_snippet_text text-center">
+                                    contacto@arengy.com.ar
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card-contacto">
+                                <div class="card text-bg-white h-100  " style="">
+
+
+                                    <div class=" h-50 centrado">
+
+                                        <img src="ing_arengy-web/static/Iconos/Ubicación - contacto.svg" class="img-num-size"/>
+
+                                    </div>
+                                    <div class="card-body h-50 pt-0">
+                                        <h5 class="azul-energy text-center orbitron">Ubicacion </h5>
+
+                                        <p class="card-text azul-energy o_default_snippet_text mb-0 pb-0 text-center">
+                                            Humberto Primo 630
+
+                                        </p>
+                                        <p class="card-text azul-energy pt-0 mt-0 o_default_snippet_text text-center">
+                                            Oficina H31 | Córdoba, Argentina
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+<!--                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">-->
+<!--                                <div class="card text-bg-white h-100">-->
+<!--                                    <div class="card-body">-->
+
+<!--                                        <h3>HEad</h3>-->
+<!--                                        <p>-->
+<!--                                            <em class="o_default_snippet_text"/>-->
+<!--                                            <br/>-->
+<!--                                        </p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            </div>
+        </t>
+    </t>
+
+    </template>
+
+     <record id="contacto_page_anergy" model="website.page">
+        <field name="name">CONTACTO s</field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="url">/contacto_anergy</field>
+        <field name="view_id" ref="ing_contacto"/>
+    </record>
+
+</odoo>

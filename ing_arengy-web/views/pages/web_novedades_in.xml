@@ -1,0 +1,117 @@
+<odoo>
+
+    <template id="page_novedades_inner" name="Inner Novedad">
+     <t t-call="website.layout">
+
+         <style>
+             @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+         </style>
+         <section class="s_text_image  pb32 o_colored_level " data-snippet="s_image_text"
+                  data-name="Image - Text" style="background-image: none; background: #F4F4FF;">
+             <div class="">
+                  <div class="col-lg-12" style="padding-right: 0px !important;">
+                         <img t-attf-src="data:image/jpg;base64,{{ id.inner_image }}"
+                              class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
+                     </div>
+                 <div class=" " style="background: #F4F4FF;">
+                     <div class="col-lg-12 pb16 o_colored_level text-center" style="padding-left:10%; padding-right:10%">
+
+                         <h2 class="o_default_snippet_text mt-3 azul-energy orbitron text-800" style="font-weight: bolder;"
+                             t-esc="id.name"></h2>
+
+                         <h6 class="o_default_snippet_text mt-3 text-600 "
+                             style="text-align: justify !important; color:black !important;" t-esc="id.desc"></h6>
+
+
+                          <button
+
+                                 class="btn btn_matricula background-azul color-letra"
+                                 style="border-radius:5px;">
+                             Contactarme →
+                         </button>
+
+                         <h3 class="azul-energy " style="text-align: center; font-weight: 600; margin-top:20px;">
+                             Podría interesarte
+                         </h3>
+
+
+                 <section class="s_three_columns  pb32 o_colored_level pt0" data-vcss="001"
+                     data-snippet="s_three_columns" data-name="Columnas" style="background-image: none;">
+                <div class="">
+                      <hr class="w-100 mx-auto azul-energy" style="border-top-width: 1px; border-top-style: solid;"/>
+                          <div class=" row d-flex align-items-stretch o_animate o_visible o_anim_slide_in o_anim_from_bottom">
+                            <t t-set="novedades" t-value="novedades_list"/>
+                            <t t-foreach="novedades" t-as="novedad">
+
+
+                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 " >
+                                    <a t-attf-href="/novedades/#{slug(novedad)}" style="text-decoration:none !important;">
+
+                                        <div class=" bg-white h-100 card_podria_interesar ">
+                                            <img class="card-img-top"
+                                                 t-attf-src="data:image/jpg;base64,{{novedad.image}}"
+                                                 alt="" loading="lazy" data-original-id="83"></img>
+                                            <div class="card-body">
+                                                <h3 class="card-title text-center o_default_snippet_text azul-energy text-left"
+                                                    t-esc="novedad.name"></h3>
+                                            </div>
+
+                                            <div>
+                                              <p class="o_default_snippet_text overflow-mobil text-center  ">
+                                                    <span t-foreach="novedad.categoria_ids" class="categoria color-letra"
+                                                          t-as="categoria">
+                                                        <t t-esc="categoria.name"/>
+
+                                                    </span>
+                                                </p>
+                                             </div>
+                                            <div class="text-center">
+
+                                                <h5  t-esc="novedad.get_fecha()" class="azul-energy">
+
+                                                </h5>
+
+                                            </div>
+
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                            </t>
+                        </div>
+                </div>
+            </section>
+<!--                <div class="products_pager form-inline justify-content-center py-3">-->
+<!--                    <t t-call="website.pager"/>-->
+<!--                </div>-->
+
+
+
+
+                     </div>
+
+                 </div>
+
+
+             </div>
+
+
+
+
+
+         </section>
+
+
+     </t>
+    </template>
+
+
+     <record id="page_inner_nov_arengy" model="website.page">
+        <field name="name">Inner nov </field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="url">/novedades</field>
+        <field name="view_id" ref="page_novedades_inner"/>
+    </record>
+</odoo>
