@@ -34,7 +34,7 @@ class WebArengy(http.Controller):
         combined_values.update(kwargs)
 
 
-        return request.render('website.inner-post',combined_values )
+        return request.render('ing_arengy-web.page_post_inner',combined_values )
 
 
 
@@ -63,7 +63,7 @@ class WebArengy(http.Controller):
 
 
 
-        return request.render('website.inner-curso', combined_values)
+        return request.render('ing_arengy-web.page_curso_inner', combined_values)
 
 
     @http.route(['/solucion', '/solucion/page/<string:page>'], type='http', auth="public", website=True)
@@ -172,7 +172,7 @@ class WebArengy(http.Controller):
         combined_values.update(values)
         combined_values.update(kwargs)
 
-        return request.render('website.inner-nov', combined_values)
+        return request.render('ing_arengy-web.page_novedades_inner', combined_values)
 
 
 
