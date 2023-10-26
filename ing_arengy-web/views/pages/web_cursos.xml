@@ -163,10 +163,10 @@
                                      <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
                                           style="border-radius: 10px;">
                                          <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
-                                             <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
+                                             <img style="border-radius: 10px 0 0 10px; height:100%; width:100%; object-fit:cover;"
                                                   class="s_media_list_img " alt="" loading="lazy"
                                                   data-original-id="65"
-                                                  t-attf-src="data:image/jpg;base64,{{curso.image}}"
+                                                  t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
 
                                                   data-mimetype="image/jpeg"/>
                                          </div>
@@ -177,15 +177,19 @@
                                              </h3>
                                              <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
                                              <!--                                                    t-esc="curso.name"></h4>-->
-                                             <p class="o_default_snippet_text overflow-mobil overflow-text " t-esc="curso.texto_corto">
+
+                                             <div class="o_default_snippet_text overflow-mobil overflow-text-curso" >
+                                                 <p t-esc="curso.description">
 
                                              </p>
+                                             </div>
+
 
                                              <p class="o_default_snippet_text overflow-categoria  ">
-                                                 <span t-foreach="curso.categoria_ids"  class="categoria color-letra" t-as="categoria">
-                                                     <t t-esc="categoria.name"/>
+<!--                                                 <span t-foreach="curso.categoria_ids"  class="categoria color-letra" t-as="categoria">-->
+<!--                                                     <t t-esc="categoria.name"/>-->
 
-                                                 </span>
+<!--                                                 </span>-->
                                              </p>
 
 
@@ -201,62 +205,43 @@
 
 
 
+                     <div class="col-lg-3">
+                         <div class="row s_nb_column_fixed s_col_no_bgcolor">
+                             <h5 class="azul-energy">Logros recientes</h5>
 
-                 <div class="col-lg-3">
-                     <div class="row s_nb_column_fixed s_col_no_bgcolor">
-                         <h5 class="azul-energy">Logros recientes</h5>
-                         <div class="col-lg-12  o_anim_fade_in o_animate o_visible o_anim_from_bottom gris-claro s_media_list_item pt16 pb16" data-name="Media item">
-                             <div class="flex_logros s_col_no_resize  gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
-                                 <div class="col-lg-4   align-self-stretch s_media_list_img_wrapper">
-                                     <img src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
-                                          class="s_media_list_img img-mobil h-100 " alt="" loading="lazy"
-                                          data-original-id="65"
-                                          data-original-src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
-                                          data-mimetype="image/jpeg"/>
-                                 </div>
-                                 <div class="col-lg-8 s_media_list_body">
+                                     <t t-set="participantes" t-value="participantes_list"/>
+                                     <t t-foreach="participantes" t-as="participante">
 
-                                     <p class="o_default_snippet_text azul-energy"><span>Richard Wilson</span> logrado Empezar
-                                     </p>
+                             <div class="col-lg-12  o_anim_fade_in o_animate o_visible o_anim_from_bottom gris-claro s_media_list_item pt16 pb16"
+                                  data-name="Media item">
+                                 <div class="flex_logros s_col_no_resize  gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
+                                     <div class="col-lg-4   align-self-stretch s_media_list_img_wrapper">
+                                         <img src="/ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                              class="s_media_list_img img-mobil h-100 w-75 " alt="" loading="lazy"
+                                              data-original-id="65"
+                                              data-original-src="/ing_arengy-web/static/Iconos/Cursos - Logros.svg"
+                                              data-mimetype="image/jpeg"/>
+                                     </div>
+                                     <div class="col-lg-8 s_media_list_body">
+
+                                         <p class="o_default_snippet_text azul-energy">
+                                             <span  t-esc="participante.name"></span>
+                                             ha logrado Empezar
+                                         </p>
+                                     </div>
                                  </div>
                              </div>
-                         </div>
-                         <div class="col-lg-12 o_anim_fade_in o_animate o_visible o_anim_from_bottom s_media_list_item gris-claro pt16 pb16" data-name="Media item">
-                             <div class="flex_logros s_col_no_resize gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
-                                 <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
-                                     <img src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
-                                          class="s_media_list_img img-mobil h-100 " alt="" loading="lazy"
-                                          data-original-id="66"
-                                          data-original-src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
-                                          data-mimetype="image/jpeg"/>
-                                 </div>
-                                 <div class="col-lg-8 s_media_list_body">
-                                    <p class="o_default_snippet_text azul-energy"><span>Richard Wilson</span> logrado Empezar
-                                     </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="col-lg-12 o_anim_fade_in o_animate o_visible o_anim_from_bottom s_media_list_item pt16 pb16" data-name="Media item">
-                             <div class="flex_logros s_col_no_resize  gris-claro s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level">
-                                 <div class="col-lg-4 align-self-stretch gris-claro s_media_list_img_wrapper">
-                                     <img src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
-                                          class="s_media_list_img h-100 img-mobil" alt="" loading="lazy"
-                                          data-original-id="67"
-                                          data-original-src="ing_arengy-web/static/Iconos/Cursos - Logros.svg"
-                                          data-mimetype="image/jpeg"/>
-                                 </div>
-                                 <div class="col-lg-8 s_media_list_body">
-                                      <p class="o_default_snippet_text azul-energy"><span>Richard Wilson</span> logrado Empezar
-                                     </p>
+                               </t>
 
-                                 </div>
-                             </div>
+
                          </div>
+
                      </div>
 
-                 </div>
              </div>
+
          </div>
+
 
          <div class="">
              <div class="centrado gris-claro">

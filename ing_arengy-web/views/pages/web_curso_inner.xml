@@ -10,7 +10,7 @@
                      data-name="Image - Text" style="background-image: none;">
                 <div class=" gris-claro" >
                     <div class="col-lg-12" style="padding-right: 0px !important;">
-                        <img t-attf-src="data:image/jpg;base64,{{ id.inner_image }}"
+                        <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
                              class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
                     </div>
                     <div class=" ">
@@ -22,13 +22,13 @@
                                 t-esc="id.name"></h4>
 
                             <h6 class="o_default_snippet_text mt-3 text-600 "
-                                style="text-align: justify !important; color:black !important;" t-esc="id.desc"></h6>
-                                  <button
-
+                                style="text-align: justify !important; color:black !important;" t-esc="id.description"></h6>
+                                  <a
+                                         t-attf-href="/slides/#{slug(id)}"
                                          class="btn btn_matricula background-azul color-letra"
                                          style="border-radius:5px;">
                                      Matricularme →
-                                  </button>
+                                  </a>
 
 
 
@@ -54,7 +54,7 @@
                                                     <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
                                                          class="s_media_list_img " alt="" loading="lazy"
                                                          data-original-id="65"
-                                                         t-attf-src="data:image/jpg;base64,{{curso.inner_image}}"
+                                                         t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
 
                                                          data-mimetype="image/jpeg"/>
                                                 </div>
@@ -65,20 +65,23 @@
                                                         Acontecimientos
                                                     </h3>
                                                     <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
-                                                    <!--                                                    t-esc="curso.name"></h4>-->
-                                                    <p class="o_default_snippet_text overflow-mobil overflow-text "
-                                                       t-esc="curso.texto_corto">
+                                                    <!--
 
-                                                    </p>
+                                                                                                      t-esc="curso.name"></h4>-->
+                                                    <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                        <p t-esc="curso.description">
 
-                                                    <p class="o_default_snippet_text overflow-mobil   ">
-                                                        <span t-foreach="curso.categoria_ids"
-                                                              class="categoria color-letra"
-                                                              t-as="categoria">
-                                                            <t t-esc="categoria.name"/>
+                                                        </p>
+                                                    </div>
 
-                                                        </span>
-                                                    </p>
+<!--                                                    <p class="o_default_snippet_text overflow-mobil   ">-->
+<!--                                                        <span t-foreach="curso.categoria_ids"-->
+<!--                                                              class="categoria color-letra"-->
+<!--                                                              t-as="categoria">-->
+<!--                                                            <t t-esc="categoria.name"/>-->
+
+<!--                                                        </span>-->
+<!--                                                    </p>-->
 
 
                                                     <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
@@ -145,7 +148,7 @@
                                                              class="s_media_list_img " alt="" loading="lazy"
                                                              data-original-id="65"
 
-                                                             t-attf-src="data:image/jpg;base64,{{curso.image}}"
+                                                             t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
                                                              data-mimetype="image/jpeg"/>
                                                     </div>
                                                     <!--                                                <p t-esc="curso_index"></p>-->
@@ -158,19 +161,20 @@
                                                         </h3>
                                                         <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
                                                         <!--                                                    t-esc="curso.name"></h4>-->
-                                                        <p class="o_default_snippet_text overflow-mobil overflow-text "
-                                                           t-esc="curso.texto_corto">
+                                                        <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                        <p t-esc="curso.description">
 
                                                         </p>
+                                                    </div>
 
-                                                        <p class="o_default_snippet_text overflow-mobil   ">
-                                                            <span t-foreach="curso.categoria_ids"
-                                                                  class="categoria color-letra"
-                                                                  t-as="categoria">
-                                                                <t t-esc="categoria.name"/>
+<!--                                                        <p class="o_default_snippet_text overflow-mobil   ">-->
+<!--                                                            <span t-foreach="curso.categoria_ids"-->
+<!--                                                                  class="categoria color-letra"-->
+<!--                                                                  t-as="categoria">-->
+<!--                                                                <t t-esc="categoria.name"/>-->
 
-                                                            </span>
-                                                        </p>
+<!--                                                            </span>-->
+<!--                                                        </p>-->
 
 
                                                         <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
@@ -202,7 +206,7 @@
                                                              class="s_media_list_img " alt="" loading="lazy"
                                                              data-original-id="65"
 
-                                                             t-attf-src="data:image/jpg;base64,{{next_curso.image}}"
+                                                             t-attf-src="data:image/jpg;base64,{{next_curso.image_1920}}"
                                                              data-mimetype="image/jpeg"/>
                                                     </div>
 
@@ -214,19 +218,20 @@
                                                             Acontecimientos
                                                         </h3>
 
-                                                        <p class="o_default_snippet_text overflow-mobil overflow-text "
-                                                           t-esc="next_curso.texto_corto">
+                                                         <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                        <p t-esc="curso.description">
 
                                                         </p>
+                                                    </div>
 
-                                                        <p class="o_default_snippet_text overflow-mobil   ">
-                                                            <span t-foreach="next_curso.categoria_ids"
-                                                                  class="categoria color-letra"
-                                                                  t-as="categoria">
-                                                                <t t-esc="categoria.name"/>
+<!--                                                        <p class="o_default_snippet_text overflow-mobil   ">-->
+<!--                                                            <span t-foreach="next_curso.categoria_ids"-->
+<!--                                                                  class="categoria color-letra"-->
+<!--                                                                  t-as="categoria">-->
+<!--                                                                <t t-esc="categoria.name"/>-->
 
-                                                            </span>
-                                                        </p>
+<!--                                                            </span>-->
+<!--                                                        </p>-->
 
 
                                                         <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
@@ -298,7 +303,7 @@
                                                      class="s_media_list_img " alt="" loading="lazy"
                                                      data-original-id="65"
 
-                                                     t-attf-src="data:image/jpg;base64,{{curso.image}}"
+                                                     t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
                                                      data-mimetype="image/jpeg"/>
                                             </div>
                                             <!--                                                <p t-esc="curso_index"></p>-->
@@ -310,19 +315,20 @@
                                                 </h3>
                                                 <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
                                                 <!--                                                    t-esc="curso.name"></h4>-->
-                                                <p class="o_default_snippet_text overflow-mobil overflow-text "
-                                                   t-esc="curso.texto_corto">
+                                                 <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                        <p t-esc="curso.description">
 
-                                                </p>
+                                                        </p>
+                                                    </div>
 
-                                                <p class="o_default_snippet_text overflow-mobil   ">
-                                                    <span t-foreach="curso.categoria_ids"
-                                                          class="categoria color-letra"
-                                                          t-as="categoria">
-                                                        <t t-esc="categoria.name"/>
+<!--                                                <p class="o_default_snippet_text overflow-mobil   ">-->
+<!--                                                    <span t-foreach="curso.categoria_ids"-->
+<!--                                                          class="categoria color-letra"-->
+<!--                                                          t-as="categoria">-->
+<!--                                                        <t t-esc="categoria.name"/>-->
 
-                                                    </span>
-                                                </p>
+<!--                                                    </span>-->
+<!--                                                </p>-->
 
 
                                                 <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->

@@ -215,7 +215,7 @@
                                     <a t-attf-href="/post/#{slug(post)}">
                                         <div class="card bg-white h-100 verde">
                                             <img class="card-img-top"
-                                                 t-attf-src="data:image/jpg;base64,{{post.image}}"
+                                                 t-attf-src="data:image/jpg;base64,{{post.image_1920}}"
                                                  alt="" loading="lazy" data-original-id="83"></img>
                                             <div class="card-body">
 <!--                                                <p class="card-text o_default_snippet_text text-left"-->

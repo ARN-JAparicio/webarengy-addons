@@ -348,6 +348,14 @@ justify-content:space-between;
     white-space: nowrap;
     text-overflow: ellipsis !important;
 }
+.overflow-text-curso{
+
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
 
 .categoria{
     background:#1B578B;
@@ -364,6 +372,21 @@ text-overflow: elipsis;
 .flex_cursos{
 display:flex;
 justify-content: space-between;
+}
+
+.o_wslides_js_course_join_link{
+background-color: #304091;
+}
+.o_wslides_course_header{
+background-color: #304091;
+}
+.js_check_product{
+background-color: #304091;
+
+}
+.js_check_product:hover{
+background-color: #304091;
+
 }
 
 
@@ -391,6 +414,11 @@ background-image: url("/ing_arengy-web/static/img/Fondo-calidad.jpg");
 
 display:none;
 }
+.flex_logros{
+display:flex;
+justify-content: left;
+}
+
 
 .size-mobil-h1{
 
@@ -463,6 +491,8 @@ padding-bottom: 10px;
     white-space: nowrap;
     text-overflow: ellipsis !important;
 }
+
+
 
 
 .slide_in_up{

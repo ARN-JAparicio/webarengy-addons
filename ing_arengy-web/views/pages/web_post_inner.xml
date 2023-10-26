@@ -10,7 +10,7 @@
                   data-name="Image - Text" style="background-image: none;">
              <div class="" style="background: #EFEFEFE5; ">
                   <div class="col-lg-12" style="padding-right: 0px !important;">
-                         <img t-attf-src="data:image/jpg;base64,{{ id.inner_image }}"
+                         <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
                               class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
                      </div>
                  <div class=" ">
@@ -20,14 +20,16 @@
                              t-esc="id.name"></h4>
 
                          <h6 class="o_default_snippet_text mt-3 text-600 "
-                             style="text-align: justify !important; color:black !important;" t-esc="id.desc"></h6>
+                             style="text-align: justify !important; color:black !important;" t-esc="id.description"></h6>
 
-                         <button
+                         <a
 
                                  class="btn btn_matricula background-azul color-letra"
-                                 style="border-radius:5px;">
+                                 style="border-radius:5px;"
+                                t-attf-href="/shop/#{slug(id)}"
+                         >
                              Contratar →
-                         </button>
+                         </a>
 
                          <h3 class="azul-energy " style="text-align: center; margin-top:20px;">
                              <font >Podria interesarte</font>
@@ -43,9 +45,9 @@
                                 <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 " >
                                     <a t-attf-href="/post/#{slug(post)}">
 
-                                        <div class=" bg-white h-100 card_podria_interesar ">
+                                        <div class=" bg-white h-100 card_podria_interesar " style="width: 100%;">
                                             <img class="card-img-top"
-                                                 t-attf-src="data:image/jpg;base64,{{post.image}}"
+                                                 t-attf-src="data:image/jpg;base64,{{post.image_1920}}"
                                                  alt="" loading="lazy" data-original-id="83"></img>
                                             <div class="card-body">
 <!--                                                <p class="card-text o_default_snippet_text text-left"-->

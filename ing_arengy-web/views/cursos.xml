@@ -74,6 +74,17 @@
                                 </group>
                             </div>
                         </div>
+
+                           <button
+
+                                name="ver_cursos"
+                                type="object"
+                                style="border-radius:5px;"
+
+
+                                class="btn ">
+                            Ver cursos
+                        </button>
                     </sheet>
 
 

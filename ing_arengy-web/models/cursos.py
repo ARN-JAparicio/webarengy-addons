@@ -2,7 +2,8 @@
 from odoo import fields, models, api
 import random
 from odoo.exceptions import UserError, ValidationError
-
+import logging
+_log = logging.getLogger(__name__)
 
 class Curso(models.Model):
     _name = 'ing.curso'
@@ -21,4 +22,18 @@ class Curso(models.Model):
             ('certificacion', 'Certificacion'),
 
         ], string="Tipo")
+
+
+    def ver_cursos(self):
+        domain = []
+        cur = self.env['slide.channel'].search(domain)
+
+        for rec in cur:
+            logging.info('--------------cursos desde elearning---------------')
+            logging.info(rec.name)
+
+
+        pass
+
+
 

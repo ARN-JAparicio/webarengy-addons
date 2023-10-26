@@ -10,8 +10,8 @@
                   data-name="Image - Text" style="background-image: none; background: #F4F4FF;">
              <div class="">
                   <div class="col-lg-12" style="padding-right: 0px !important;">
-                         <img t-attf-src="data:image/jpg;base64,{{ id.inner_image }}"
-                              class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
+<!--                         <img t-attf-src="data:image/jpg;base64,{{ id.inner_image }}"-->
+<!--                              class="img img-fluid mx-auto" style="margin-right:0px !important;"/>-->
                      </div>
                  <div class=" " style="background: #F4F4FF;">
                      <div class="col-lg-12 pb16 o_colored_level text-center" style="padding-left:10%; padding-right:10%">
@@ -48,9 +48,9 @@
                                     <a t-attf-href="/novedades/#{slug(novedad)}" style="text-decoration:none !important;">
 
                                         <div class=" bg-white h-100 card_podria_interesar ">
-                                            <img class="card-img-top"
-                                                 t-attf-src="data:image/jpg;base64,{{novedad.image}}"
-                                                 alt="" loading="lazy" data-original-id="83"></img>
+<!--                                            <img class="card-img-top"-->
+<!--                                                 t-attf-src="data:image/jpg;base64,{{novedad.image}}"-->
+<!--                                                 alt="" loading="lazy" data-original-id="83"></img>-->
                                             <div class="card-body">
                                                 <h3 class="card-title text-center o_default_snippet_text azul-energy text-left"
                                                     t-esc="novedad.name"></h3>
@@ -58,7 +58,7 @@
 
                                             <div>
                                               <p class="o_default_snippet_text overflow-mobil text-center  ">
-                                                    <span t-foreach="novedad.categoria_ids" class="categoria color-letra"
+                                                    <span t-foreach="novedad.tag_ids" class="categoria color-letra"
                                                           t-as="categoria">
                                                         <t t-esc="categoria.name"/>
 
@@ -67,7 +67,7 @@
                                              </div>
                                             <div class="text-center">
 
-                                                <h5  t-esc="novedad.get_fecha()" class="azul-energy">
+                                                <h5  t-esc="novedad.create_date.strftime('%d %B %Y')" class="azul-energy">
 
                                                 </h5>
 
