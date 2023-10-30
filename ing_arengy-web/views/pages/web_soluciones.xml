@@ -236,11 +236,14 @@
                             TODO: AÑADIR LOGICA EN EL CONTROLLER PARA QUE FUNCIONE LA PAGINACION-->
 
 
-             <div class="pager">
-                 <div class="centrado ">
-                    <t t-call="website.pager"/>
+                 <div class="pager">
+
+                     <div class="centrado ">
+                         <t t-if="pager">
+                             <t t-call="website.pager"/>
+                         </t>
+                     </div>
                  </div>
-             </div>
          </div>
 
              </div>

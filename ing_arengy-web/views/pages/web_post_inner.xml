@@ -63,9 +63,12 @@
 
                             </t>
                         </div>
-                <div class="products_pager form-inline justify-content-center py-3">
-                    <t t-call="website.pager"/>
-                </div>
+                         <div class="products_pager form-inline justify-content-center py-3">
+                             <t t-if="pager">
+
+                                 <t t-call="website.pager"/>
+                             </t>
+                         </div>
 
 
 

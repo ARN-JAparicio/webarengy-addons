@@ -19,7 +19,7 @@
         ],
     },
     'version': '1',
-    'depends': ['base','website', 'sale', 'website_sale', 'website_slides', 'website_blog', 'website_sale_hide_price'],
+    'depends': ['base','website', 'sale', 'website_sale', 'website_slides', 'website_blog'],
     'data': [
         # Security
         'security/security.xml',

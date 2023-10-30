@@ -52,7 +52,7 @@ class WebArengy(http.Controller):
         curso = id_curso.with_context(curso_context)
         kwargs.update({'id': id_curso, 'main_object': curso})
         domain = []
-        cant = 12;
+        cant = 8;
 
         # cursos = request.env['ing.curso'].sudo().search(domain, limit=cant)
         _cur = request.env['slide.channel'].sudo().search(domain, limit=cant)
@@ -123,7 +123,7 @@ class WebArengy(http.Controller):
 
         total_cursos = request.env['slide.channel'].sudo().search(domain)
         total_count = len(total_cursos)
-        per_page = 3
+        per_page = 8
 
 
 
@@ -251,7 +251,7 @@ class WebArengy(http.Controller):
 
         total_count = len(total_cursos)
 
-        per_page = 3
+        per_page = 8
 
         pager = request.website.pager(url='/filter', total=total_count, page=page, step=per_page, scope=3)
 
@@ -287,7 +287,7 @@ class WebArengy(http.Controller):
 
         total_count = len(total_post)
 
-        per_page = 3
+        per_page = 12
 
         pager = request.website.pager(url='/filtro' , total=total_count, page=page, step=per_page, scope=3)
 
