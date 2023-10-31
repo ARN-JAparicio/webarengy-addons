@@ -41,7 +41,7 @@ class WebArengy(http.Controller):
         combined_values.update(kwargs)
 
 
-        return request.render('ing_arengy-web.page_post_inner',combined_values )
+        return request.render('website.inner-post',combined_values )
 
 
 
@@ -59,7 +59,6 @@ class WebArengy(http.Controller):
 
         for rec in _cur:
 
-            logging.info('---.---------------CUrso inner -------------------')
             logging.info(rec.name)
 
 
@@ -78,7 +77,7 @@ class WebArengy(http.Controller):
 
 
 
-        return request.render('ing_arengy-web.page_curso_inner', combined_values)
+        return request.render('website.inner-curso', combined_values)
 
 
     @http.route(['/solucion', '/solucion/page/<string:page>'], type='http', auth="public", website=True)
@@ -97,8 +96,7 @@ class WebArengy(http.Controller):
         pos = request.env['product.template'].sudo().search(domain)
 
         for rec in pos:
-            logging.info('--------------------------Soluciones ---------product template --------')
-            logging.info(rec.name)
+
 
             logging.info(rec.description)
 
@@ -164,8 +162,7 @@ class WebArengy(http.Controller):
         total_novedades = request.env['blog.post'].sudo().search(domain)
 
         for rec in total_novedades:
-            logging.info('--------------Novedades .-----------------------------')
-            logging.info(rec.name)
+
             tag_names = rec.tag_ids.mapped('name')
             logging.info(tag_names)
             logging.info(rec.blog_id.name)
@@ -237,11 +234,9 @@ class WebArengy(http.Controller):
         if filter != "":
             domain_filter=[('name', 'ilike', filter)]
             domain = domain_filter
-            logging.info('------------------entrando en filtro ------------')
 
 
         if tipo != "":
-            logging.info('-------------Entrando en tipo ------------')
             domain_tipo = [('tipo', '=', tipo)]
             domain = domain
 
@@ -294,7 +289,6 @@ class WebArengy(http.Controller):
         _post = request.env['product.template'].sudo().search(domain, limit=per_page, offset=pager['offset'])
 
         for rec in _post:
-            logging.info('--------------------------------------Post name ----------------------------')
             logging.info(rec.name)
         values = {
             'post_list': _post,
