@@ -1,4 +1,6 @@
 from odoo import http
+from odoo.addons.http_routing.models.ir_http import slug
+
 from odoo.http import request
 import logging
 _log = logging.getLogger(__name__)
@@ -10,7 +12,7 @@ class WebArengy(http.Controller):
         post_context = dict(request.env.context, active_id=id_post.id, partner=request.env.user.partner_id)
         post = id_post.with_context(post_context)
         kwargs.update({'id': id_post, 'main_object': post})
-        domain = []
+        domain = [('detailed_type', '=', 'service'), ('is_published', '=', True)]
         cant = 3;
 
 
@@ -23,8 +25,9 @@ class WebArengy(http.Controller):
 
         count = len(total_post)
         per_page =12
+        url = "/post/%s/" % slug(id_post)
 
-        pager = request.website.pager(url='/post', total=count, page= page, step=per_page, scope=3, url_args=None)
+        pager = request.website.pager(url=url, total=count, page= page, step=per_page, scope=3, url_args={'id': id_post})
 
         _pos = request.env['product.template'].sudo().search(domain, limit=cant, offset=pager['offset'])
         values ={
@@ -41,7 +44,7 @@ class WebArengy(http.Controller):
         combined_values.update(kwargs)
 
 
-        return request.render('website.inner-post',combined_values )
+        return request.render('ing_arengy-web.page_post_inner',combined_values )
 
 
 
@@ -77,7 +80,7 @@ class WebArengy(http.Controller):
 
 
 
-        return request.render('website.inner-curso', combined_values)
+        return request.render('ing_arengy-web.page_curso_inner', combined_values)
 
 
     @http.route(['/solucion', '/solucion/page/<string:page>'], type='http', auth="public", website=True)
