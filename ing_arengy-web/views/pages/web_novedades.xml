@@ -51,7 +51,17 @@
                                                     t-esc="novedad.name"></h3>
                                             </div>
 
-                                            <div>
+
+                                            <div class=" overflow-text-novedad" style="text-align: justify; padding-right:10px; padding-left:10px;">
+
+                                                <p style="" t-esc="novedad.content" class="azul-energy">
+
+                                                </p>
+
+                                            </div>
+
+
+                                            <div  style="padding-top: 20px;">
                                               <p class="o_default_snippet_text overflow-mobil text-center  ">
                                                     <span t-foreach="novedad.tag_ids" class="categoria color-letra"
                                                           t-as="categoria">
@@ -60,6 +70,7 @@
                                                     </span>
                                                 </p>
                                              </div>
+
                                             <div class="text-center">
 
                                                 <h5  t-esc="novedad.create_date.strftime('%d %B %Y')" class="azul-energy">

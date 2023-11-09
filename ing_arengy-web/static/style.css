@@ -342,6 +342,14 @@ justify-content:space-between;
 
     padding-bottom: 15px ! important;
 }
+.overflow-text-novedad{
+     overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+
+}
+
 
 .overflow-text{
     overflow: hidden;
