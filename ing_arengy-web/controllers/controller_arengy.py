@@ -44,7 +44,7 @@ class WebArengy(http.Controller):
         combined_values.update(kwargs)
 
 
-        return request.render('ing_arengy-web.page_post_inner',combined_values )
+        return request.render('ing_arengy-web.page_inner_arengy',combined_values )
 
 
 

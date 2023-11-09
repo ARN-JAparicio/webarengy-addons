@@ -1,69 +1,95 @@
 <odoo>
 
-    <template id="page_post_inner" name="Inner_post">
-     <t t-call="website.layout">
-
-         <style>
-             @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
-         </style>
-         <section class="s_text_image  pb32 o_colored_level" data-snippet="s_image_text"
-                  data-name="Image - Text" style="background-image: none;">
-             <div class="" style="background: #EFEFEFE5; ">
-                  <div class="col-lg-12" style="padding-right: 0px !important;">
-                         <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
-                              class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
-                     </div>
-                 <div class=" ">
-                     <div class="col-lg-12 pb16 o_colored_level text-center" style="padding-left:10%; padding-right:10%">
-
-                         <h4 class="o_default_snippet_text mt-3 azul-energy orbitron text-800" style="font-weight: bolder;"
-                             t-esc="id.name"></h4>
-
-                         <h6 class="o_default_snippet_text mt-3 text-600 "
-                             style="text-align: justify !important; color:black !important;" t-esc="id.description"></h6>
-
-                         <a
-
-                                 class="btn btn_matricula background-azul color-letra"
-                                 style="border-radius:5px;"
-                                t-attf-href="/shop/#{slug(id)}"
-                         >
-                             Contratar →
-                         </a>
-
-                         <h3 class="azul-energy " style="text-align: center; margin-top:20px;">
-                             <font >Podria interesarte</font>
-                             <br/>
-                         </h3>
-                         <hr class="w-100 mx-auto azul-energy" style="border-top-width: 1px; border-top-style: solid;"/>
-
-                           <div class=" row d-flex align-items-stretch">
-                            <t t-set="posts" t-value="list_post"/>
-                            <t t-foreach="posts" t-as="post">
+<!--    <template id="page_post_inner" name="Inner_post">-->
+<!--      -->
+<!--    </template>-->
 
 
-                                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 " >
-                                    <a t-attf-href="/post/#{slug(post)}">
 
-                                        <div class=" bg-white h-100 card_podria_interesar " style="width: 100%;">
-                                            <img class="card-img-top"
-                                                 t-attf-src="data:image/jpg;base64,{{post.image_1920}}"
-                                                 alt="" loading="lazy" data-original-id="83"></img>
-                                            <div class="card-body">
-<!--                                                <p class="card-text o_default_snippet_text text-left"-->
-<!--                                                   t-esc="post.desc"></p>-->
-                                                <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"
-                                                    t-esc="post.name"></h4>
+
+
+
+    <record id="page_inner_arengy" model="website.page">
+        <field name="name">Inner post</field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="url">/post</field>
+        <field name="key">ing_arengy-web.page_inner_arengy</field>
+
+<!--        <field name="view_id" ref="page_post_inner"/>-->
+
+
+        <field name="arch" type="xml">
+
+
+
+          <t t-call="website.layout">
+
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+            </style>
+            <section class="s_text_image  pb32 o_colored_level" data-snippet="s_image_text"
+                     data-name="Image - Text" style="background-image: none;">
+                <div class="" style="background: #EFEFEFE5; ">
+                    <div class="col-lg-12" style="padding-right: 0px !important;">
+                        <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
+                             class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
+                    </div>
+                    <div class=" ">
+                        <div class="col-lg-12 pb16 o_colored_level text-center"
+                             style="padding-left:10%; padding-right:10%">
+
+                            <h4 class="o_default_snippet_text mt-3 azul-energy orbitron text-800"
+                                style="font-weight: bolder;"
+                                t-esc="id.name"></h4>
+
+                            <h6 class="o_default_snippet_text mt-3 text-600 "
+                                style="text-align: justify !important; color:black !important;"
+                                t-esc="id.description"></h6>
+
+                            <a
+
+                                    class="btn btn_matricula background-azul color-letra"
+                                    style="border-radius:5px;"
+                                    t-attf-href="/shop/#{slug(id)}"
+                            >
+                                Contratar →
+                            </a>
+
+                            <h3 class="azul-energy " style="text-align: center; margin-top:20px;">
+                                <font>Podria interesarte</font>
+                                <br/>
+                            </h3>
+                            <hr class="w-100 mx-auto azul-energy"
+                                style="border-top-width: 1px; border-top-style: solid;"/>
+
+                            <div class=" row d-flex align-items-stretch">
+                                <t t-set="posts" t-value="list_post"/>
+                                <t t-foreach="posts" t-as="post">
+
+
+                                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 ">
+                                        <a t-attf-href="/post/#{slug(post)}">
+
+                                            <div class=" bg-white h-100 card_podria_interesar " style="width: 100%;">
+                                                <img class="card-img-top"
+                                                     t-attf-src="data:image/jpg;base64,{{post.image_1920}}"
+                                                     alt="" loading="lazy" data-original-id="83"></img>
+                                                <div class="card-body">
+                                                    <!--                                                <p class="card-text o_default_snippet_text text-left"-->
+                                                    <!--                                                   t-esc="post.desc"></p>-->
+                                                    <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"
+                                                        t-esc="post.name"></h4>
+                                                </div>
+
                                             </div>
-
-                                        </div>
-                                    </a>
-                                </div>
+                                        </a>
+                                    </div>
 
 
-                            </t>
-                        </div>
-                           <div class="pager">
+                                </t>
+                            </div>
+                            <div class="pager">
                                 <div class="centrado ">
 
                                     <t t-if="pager">
@@ -73,34 +99,25 @@
                             </div>
 
 
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </t>
 
 
 
-                     </div>
-
-                 </div>
-
-
-             </div>
 
 
 
-
-
-         </section>
-
-
-
-
-     </t>
-    </template>
-
-
-     <record id="page_inner_arengy" model="website.page">
-        <field name="name">Inner post </field>
-        <field name="website_published">True</field>
-        <field name="type">qweb</field>
-        <field name="url">/solucion</field>
-        <field name="view_id" ref="page_post_inner"/>
+        </field>
     </record>
+
 </odoo>
