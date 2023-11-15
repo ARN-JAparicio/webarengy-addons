@@ -71,6 +71,15 @@
             </section>
                  </div>
             </xpath>
+
+               <xpath expr="//*[hasclass('oe_structure')]" position="after">
+                    <t t-set="flags" t-value="True"/>
+                    <t id="language_selector_call" t-call="portal.language_selector">
+                        <t t-set="_div_classes" t-value="(_div_classes or '') + ' dropup'"/>
+                    </t>
+                </xpath>
+
+
         </template>
     </data>
 </odoo>
