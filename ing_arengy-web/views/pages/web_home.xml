@@ -4,1016 +4,1233 @@
     <template id="ing_home" name="Homepage">
 
 
-
-    <t t-call="website.layout">
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
-        </style>
-
-
-     <t t-set="pageName" t-value="'homepage'"/>
-        <div id="wrap" class="oe_structure oe_empty"><section class="s_carousel_wrapper " data-vxml="001" data-snippet="s_carousel" data-name="Carrusel">
-      <div class="s_carousel s_carousel_default carousel slide " data-bs-interval="10000" id="myCarousel1694605697770" style="background-image: none;">
-
-            <ol style="list-style: none;">
-                <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1694605697770"/>
-                <li data-bs-slide-to="1" data-bs-target="#myCarousel1694605697770"/>
-                <li data-bs-slide-to="2" data-bs-target="#myCarousel1694605697770"/>
-            <li data-bs-target="#myCarousel1694605697770" data-bs-slide-to="3" aria-current="true"/> </ol>
+        <t t-call="website.layout">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+            </style>
 
 
-            <div class="carousel-inner">
+            <t t-set="pageName" t-value="'homepage'"/>
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_carousel_wrapper " data-vxml="001" data-snippet="s_carousel" data-name="Carrusel">
+                    <div class="s_carousel s_carousel_default carousel slide " data-bs-interval="10000"
+                         id="myCarousel1694605697770" style="background-image: none;">
 
-                <div class="carousel-item pt152 pb152 o_colored_level o_background_video active" style="background-image: none;" data-name="Slide" data-bg-video-src="ing_arengy-web/static/img/Video 4.mp4?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1">
-                    <div class="container oe_unremovable">
-                        <div class="row content">
-                          <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
-                                <h2 style="" class="o_default_snippet_text color-letra orbitron">MINERÍA AISLADA</h2>
-                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                                    <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                        <ol style="list-style: none;">
+                            <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1694605697770"/>
+                            <li data-bs-slide-to="1" data-bs-target="#myCarousel1694605697770"/>
+                            <li data-bs-slide-to="2" data-bs-target="#myCarousel1694605697770"/>
+                            <li data-bs-target="#myCarousel1694605697770" data-bs-slide-to="3" aria-current="true"/>
+                        </ol>
+                        data-bg-video-src="http://www.youtube.com/embed/bXGb85Kg0eY?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=bXGb85Kg0eY&amp;fs=0&amp;modestbranding=1">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item pt152 pb152 o_colored_level o_background_video active"
+                                 style="background-image: none;" data-name="Slide"
+                                 data-bg-video-src="http://www.youtube.com/embed/bXGb85Kg0eY?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=bXGb85Kg0eY&amp;fs=0&amp;modestbranding=1">
+                                <div class="container oe_unremovable">
+                                    <div class="row content">
+                                        <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
+                                            <h2 style="" class="o_default_snippet_text color-letra orbitron">MINERÍA
+                                                AISLADA
+                                            </h2>
+                                            <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                                <hr class="w-25 mx-auto"
+                                                    style="border-top-width: 1px; border-top-style: solid;"/>
+                                            </div>
+                                            <p class="lead o_default_snippet_text color-letra">Ingeniería especializada,
+                                                gestión de proyectos y desarrollo de cadena de suministros usando
+                                                tecnologías disruptivas de alto valor agregado para proyectos ubicados
+                                                en altura y con limitaciones de accesibilidad y proveedores de insumos
+                                                para la construcción tradicional.
+                                            </p>
+                                            <p>
+                                                <a href="/contacto_anergy"
+                                                   class="btn btn_carousel mb-2 o_default_snippet_text color-letra">
+                                                    Solicitar presupuesto
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="lead o_default_snippet_text color-letra">Ingeniería especializada, gestión de proyectos y desarrollo de cadena de suministros usando tecnologías disruptivas de alto valor agregado para proyectos ubicados en altura y con limitaciones de accesibilidad y proveedores de insumos para la construcción tradicional.</p>
-                                <p><a href="/contacto_anergy" class="btn btn_carousel mb-2 o_default_snippet_text color-letra">Solicitar presupuesto</a></p>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="carousel-item pt96 pb96 o_colored_level o_background_video" style="background-image: none;" data-name="Slide" data-bg-video-src="ing_arengy-web/static/img/Video 4.mp4?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1">
-                    <div class="container oe_unremovable">
-                        <div class="row content">
-                            <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
-                                <h2 style="" class="o_default_snippet_text color-letra orbitron">EFICIENCIA ENERGÉTICA</h2>
-                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                                    <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                            <div class="carousel-item pt96 pb96 o_colored_level o_background_video"
+                                 style="background-image: none;" data-name="Slide"
+                                 data-bg-video-src="http://www.youtube.com/embed/bXGb85Kg0eY?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=bXGb85Kg0eY&amp;fs=0&amp;modestbranding=1">
+                                <div class="container oe_unremovable">
+                                    <div class="row content">
+                                        <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
+                                            <h2 style="" class="o_default_snippet_text color-letra orbitron">EFICIENCIA
+                                                ENERGÉTICA
+                                            </h2>
+                                            <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                                <hr class="w-25 mx-auto"
+                                                    style="border-top-width: 1px; border-top-style: solid;"/>
+                                            </div>
+                                            <p class="lead o_default_snippet_text color-letra">No solo medir, también
+                                                controlar. Un buen plan de eficiencia energética cuenta con capacidades
+                                                de medición, interpretación, diagnóstico y corrección del problema.
+                                                Nuestra solución realiza eso las 24 horas, los 365 días del año de forma
+                                                autónoma.
+                                            </p>
+                                            <p>
+                                                <a href="/contacto_anergy"
+                                                   class="btn btn_carousel mb-2 o_default_snippet_text color-letra">
+                                                    Solicitar presupuesto
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="lead o_default_snippet_text color-letra">No solo medir, también controlar. Un buen plan de eficiencia energética cuenta con capacidades de medición, interpretación, diagnóstico y corrección del problema. Nuestra solución realiza eso las 24 horas, los 365 días del año de forma autónoma.</p>
-                                <p><a href="/contacto_anergy" class="btn btn_carousel mb-2 o_default_snippet_text color-letra">Solicitar presupuesto</a></p>
                             </div>
-                        </div>
-                    </div>
-                </div><div class="carousel-item pt96 pb96 o_colored_level o_background_video" style="background-image: none;" data-name="Slide" data-bg-video-src="ing_arengy-web/static/img/Video 4.mp4?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1">
-                    <div class="container oe_unremovable">
-                        <div class="row content">
-                            <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
-                                <h2 style="" class="o_default_snippet_text color-letra orbitron">CALIDAD GARANTIZADA</h2>
-                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                                    <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                            <div class="carousel-item pt96 pb96 o_colored_level o_background_video"
+                                 style="background-image: none;" data-name="Slide"
+                                 data-bg-video-src="http://www.youtube.com/embed/bXGb85Kg0eY?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=bXGb85Kg0eY&amp;fs=0&amp;modestbranding=1">
+                                <div class="container oe_unremovable">
+                                    <div class="row content">
+                                        <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
+                                            <h2 style="" class="o_default_snippet_text color-letra orbitron">CALIDAD
+                                                GARANTIZADA
+                                            </h2>
+                                            <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                                <hr class="w-25 mx-auto"
+                                                    style="border-top-width: 1px; border-top-style: solid;"/>
+                                            </div>
+                                            <p class="lead o_default_snippet_text color-letra">Hemos logrado integración
+                                                100 % digital de los procesos productivos, lo que nos permite una
+                                                gestión transparente de la cadena de valor, dando oportunidad a que
+                                                nuestros partners y clientes puedan conocer el estado de situación de
+                                                sus encomiendas en tiempo real.
+                                            </p>
+                                            <p>
+                                                <a href="/contacto_anergy"
+                                                   class="btn btn_carousel mb-2 o_default_snippet_text color-letra">
+                                                    Solicitar presupuesto
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="lead o_default_snippet_text color-letra">Hemos logrado integración 100 % digital de los procesos productivos, lo que nos permite una gestión transparente de la cadena de valor, dando oportunidad a que nuestros partners y clientes puedan conocer el estado de situación de sus encomiendas en tiempo real. </p>
-                                <p><a href="/contacto_anergy" class="btn btn_carousel mb-2 o_default_snippet_text color-letra">Solicitar presupuesto</a></p>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="carousel-item pt128 pb128 o_colored_level o_background_video" style="background-image: none;" data-name="Slide" data-bg-video-src="ing_arengy-web/static/img/Video 4.mp4?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1">
-                    <div class="container oe_unremovable">
-                        <div class="row content">
-                            <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
-                                <h2 style="" class="o_default_snippet_text color-letra orbitron">DISEÑO DE SISTEMAS</h2>
-                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                                    <hr class="w-25 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                            <div class="carousel-item pt128 pb128 o_colored_level o_background_video"
+                                 style="background-image: none;" data-name="Slide"
+                                 data-bg-video-src="http://www.youtube.com/embed/bXGb85Kg0eY?rel=0&amp;autoplay=1&amp;mute=1&amp;enablejsapi=1&amp;controls=0&amp;loop=1&amp;playlist=bXGb85Kg0eY&amp;fs=0&amp;modestbranding=1">
+                                <div class="container oe_unremovable">
+                                    <div class="row content">
+                                        <div class="carousel-content col-lg-8 offset-lg-2  text-center pt48 pb40 o_colored_level">
+                                            <h2 style="" class="o_default_snippet_text color-letra orbitron">DISEÑO DE
+                                                SISTEMAS
+                                            </h2>
+                                            <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                                <hr class="w-25 mx-auto"
+                                                    style="border-top-width: 1px; border-top-style: solid;"/>
+                                            </div>
+                                            <p class="lead o_default_snippet_text color-letra">Nos encargamos de que
+                                                tengas la definición de detalle que se necesita para ejecutar la
+                                                construcción, operación y mantenimiento de sistemas de generación,
+                                                transporte y distribución de energía eléctrica de base tecnológica.
+                                                Éstos proyectos difieren de los sistemas de generación tradicionales
+                                                debido al elevado número de tecnologías a integrar.
+                                            </p>
+                                            <p class="color-letra">
+                                                <a href="/contacto_anergy"
+                                                   class="btn btn_carousel mb-2 o_default_snippet_text color-letra">
+                                                    Solicitar presupuesto
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="lead o_default_snippet_text color-letra">Nos encargamos de que tengas la definición de detalle que se necesita para ejecutar la construcción, operación y mantenimiento de sistemas de generación, transporte y distribución de energía eléctrica de base tecnológica. Éstos proyectos difieren de los sistemas de generación tradicionales debido al elevado número de tecnologías a integrar.</p>
-                                <p class="color-letra"><a href="/contacto_anergy" class="btn btn_carousel mb-2 o_default_snippet_text color-letra">Solicitar presupuesto</a></p>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img"
+                           aria-label="Anterior" title="Anterior" href="#myCarousel1694605697770">
+                            <span class="carousel-control-prev-icon"/>
+                            <span class="visually-hidden o_default_snippet_text">Previous</span>
+                        </a>
+                        <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img"
+                           aria-label="Siguiente" title="Siguiente" href="#myCarousel1694605697770">
+                            <span class="carousel-control-next-icon"/>
+                            <span class="visually-hidden o_default_snippet_text">Next</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="s_three_columns slide_in_up o_colored_level o_cc o_cc2 " data-vcss="001"
+                         data-snippet="s_three_columns" data-name="Columnas"
+                         style="background-image: none; --wanim-intensity: 11">
+                    <div class="container">
+                        <div class="row centrado">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white h-100 card-external-radius gris-claro " style="">
+
+
+                                    <div class="background-azul h-50 card-border-radius centrado">
+                                        <img src="ing_arengy-web/static/img/Experiencia.svg" class="img-size"/>
+
+                                    </div>
+                                    <div class="card-body h-50 gris-claro">
+
+                                        <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">
+                                            Experiencia
+                                        </h3>
+                                        <p class="card-text o_default_snippet_text text-center">Explore the potential
+                                            use of the FluidFM for temporal transcriptomics.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white  h-100 card-external-radius gris-claro">
+                                    <div class="background-azul h-50 card-border-radius centrado">
+
+                                        <img src="ing_arengy-web/static/img/Liderazgo.svg" class="img-size"/>
+
+                                    </div>
+
+                                    <div class=" card-body h50 gris-claro">
+                                        <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">
+                                            Liderazgo
+                                        </h3>
+                                        <p class="card-text text-center">Explore the potential use of the FluidFM for
+                                            temporal transcriptomics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white  h-100 card-external-radius gris-claro" style="">
+
+                                    <div class="background-azul h-50 card-border-radius centrado">
+                                        <img src="ing_arengy-web/static/img/Tecnología.svg" class="img-size"/>
+                                    </div>
+
+
+                                    <div class="card-body h-50 gris-claro">
+                                        <h3 class="card-title text-center orbitron azul-energy">Tecnología</h3>
+                                        <p class="card-text text-center">Explore the potential use of the FluidFM for
+                                            temporal transcriptomics.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
+                </section>
+
+
+                <!--################################################################################################################################################################-->
+                <!--                                                                             SECCION MOBIL-->
+                <!--################################################################################################################################################################-->
+                <section
+                        class="s_three_columns slide_in_up_mobil o_anim_fade_in o_animate o_anim_from_bottom o_colored_level  "
+                        data-vcss="001" data-snippet="s_three_columns" data-name="Columnas"
+                        style="background-image: none; --wanim-intensity: 11">
+                    <div class="container">
+                        <div class="row centrado">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white h-100 card-external-radius gris-claro " style="">
+
+
+                                    <div class="background-azul h-50 card-border-radius centrado">
+                                        <img src="ing_arengy-web/static/img/Experiencia.svg" class="img-size"/>
+
+                                    </div>
+                                    <div class="card-body h-50 gris-claro">
+
+                                        <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">
+                                            Experiencia
+                                        </h3>
+                                        <p class="card-text o_default_snippet_text text-center">Explore the potential
+                                            use of the FluidFM for temporal transcriptomics.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white  h-100 card-external-radius gris-claro">
+                                    <div class="background-azul h-50 card-border-radius centrado">
+
+                                        <img src="ing_arengy-web/static/img/Liderazgo.svg" class="img-size"/>
+
+                                    </div>
+
+                                    <div class=" card-body h50 gris-claro">
+                                        <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">
+                                            Liderazgo
+                                        </h3>
+                                        <p class="card-text text-center">Explore the potential use of the FluidFM for
+                                            temporal transcriptomics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white  h-100 card-external-radius gris-claro" style="">
+
+                                    <div class="background-azul h-50 card-border-radius centrado">
+                                        <img src="ing_arengy-web/static/img/Tecnología.svg" class="img-size"/>
+                                    </div>
+
+
+                                    <div class="card-body h-50 gris-claro">
+                                        <h3 class="card-title text-center orbitron azul-energy">Tecnología</h3>
+                                        <p class="card-text text-center">Explore the potential use of the FluidFM for
+                                            temporal transcriptomics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--        #############################FIN MOBIL########################-->
+
+                </section>
+                <section class="s_title o_colored_level pb0" data-vcss="001" data-snippet="s_title" data-name="Título"
+                         style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <h1 class="orbitron" style="text-align: center;">
+                            <font style="color: rgb(27, 87, 139); ">Nuestras solucio​n​es​​</font>
+                            <font style=""/>
+                            <br/>
+                        </h1>
+                    </div>
+                </section>
+
+                <div class="columns-mobil">
+                    <section class="s_text_block   pb-10o_colored_level pt0" data-snippet="s_text_block"
+                             data-name="Texto"
+                             style="background-image: none;">
+                        <div class="s_allow_columns container">
+                            <p style="text-align: center;">Generación, transporte y distribución de energía de base
+                                tecnológica
+                            </p>
+                        </div>
+
+                    </section>
+                    <section class="s_text_image pt-5  o_colored_level padding_soluciones pb0"
+                             data-snippet="s_image_text"
+                             data-name="Image - Text" style="background-image: none;">
+                        <div class="container">
+                            <div class="row align-items-center o_animate o_visible o_anim_slide_in o_anim_from_left">
+                                <div class="col-lg-6 pr-0 o_colored_level padding_soluciones">
+                                    <img src="ing_arengy-web/static/img/Microrredes.jpg" class="img img-fluid mx-auto"
+                                         alt=""
+                                         loading="lazy" data-original-id="80"
+                                         data-original-src="ing_arengy-web/static/img/Microrredes.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip542572" style=""/>
+                                </div>
+                                <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right ">
+                                    <h2 class="o_default_snippet_text azul-energy">MICRORREDES</h2>
+                                    <h3 class="o_default_snippet_text azul-energy">100% RENOVABLE</h3>
+                                    <p class="o_default_snippet_text">En los últimos años, la minería en regiones de
+                                        altura,
+                                        como salares para extracción de litio, metales, o tierras raras tiene un
+                                        crecimiento
+                                        exponencial, se fundamenta en la demanda de tecnologías para generación de
+                                        energías
+                                        renovables, almacenamiento de energía, electromovilidad y telecomunicaciones.
+                                    </p>
+                                    <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
+                                    <p>
+                                        <a href="/contacto_anergy"
+                                           class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
+                                            →
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image  o_colored_level pb0 padding_soluciones" data-snippet="s_text_image"
+                             data-name="Text - Image" style="background-image: none;">
+                        <div class="container ">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_left">
+                                    <h2 class="o_default_snippet_text azul-energy">PARQUES SOLARES</h2>
+                                    <h3 class="o_default_snippet_text azul-energy">AUTOCONSUMO E INYECCION A RED</h3>
+                                    <p class="o_default_snippet_text">Desarrollamos proyectos de autoabastecimiento de
+                                        energía
+                                        mediante fuentes renovables como así también proyectos de grandes usinas de
+                                        generación
+                                        fotovoltaica para inyectar directamente en las redes troncales del sistema
+                                        interconectado de transporte y distribución de energía eléctrica. Conocemos las
+                                        coyunturas de los países
+                                    </p>
+                                    <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
+                                    <p>
+                                        <a href="/contacto_anergy"
+                                           class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
+                                            →
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-lg-6  o_colored_level pt0 padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_right">
+                                    <img src="ing_arengy-web/static/img/Parques solares.jpg"
+                                         class="img img-fluid mx-auto"
+                                         alt="" loading="lazy" data-original-id="81"
+                                         data-original-src="ing_arengy-web/static/img/Parques solares.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip3203" style=""/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="s_text_image  o_colored_level padding_soluciones pb0" data-snippet="s_image_text"
+                             data-name="Image - Text" style="background-image: none;">
+                        <div class="container mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pr-0 o_colored_level padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_left">
+                                    <img src="ing_arengy-web/static/img/Estabilización de red.jpg"
+                                         class="img img-fluid mx-auto"
+                                         alt="" loading="lazy" data-original-id="80"
+                                         data-original-src="ing_arengy-web/static/img/Estabilización de red.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip542572" style=""/>
+                                </div>
+                                <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right">
+                                    <h2 class="o_default_snippet_text azul-energy">ESTABILIZACIÓN DE RED</h2>
+                                    <h3 class="o_default_snippet_text azul-energy">ALMACENAMIENTO EN BATERÍAS DE LITIO
+                                    </h3>
+                                    <p class="o_default_snippet_text">Un BESS (Battery Energy Storage System) puede
+                                        ayudar a las
+                                        centrales eléctricas y a las redes eléctricas a restablecerse rápidamente tras
+                                        los
+                                        cortes de energía. En lugar de utilizar un generador diésel, los consumidores
+                                        pueden
+                                        recurrir a un sistema de almacenamiento en baterías, una solución de arranque en
+                                        negro
+                                        más barata y.
+                                    </p>
+                                    <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
+                                    <p>
+                                        <a href="/contacto_anergy"
+                                           class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
+                                            →
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
-            </div>
-
-            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Anterior" title="Anterior" href="#myCarousel1694605697770">
-                <span class="carousel-control-prev-icon"/>
-                <span class="visually-hidden o_default_snippet_text">Previous</span>
-            </a>
-            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Siguiente" title="Siguiente" href="#myCarousel1694605697770">
-                <span class="carousel-control-next-icon"/>
-                <span class="visually-hidden o_default_snippet_text">Next</span>
-            </a>
-        </div>
-    </section><section class="s_three_columns slide_in_up o_colored_level o_cc o_cc2 " data-vcss="001" data-snippet="s_three_columns" data-name="Columnas" style="background-image: none; --wanim-intensity: 11">
-        <div class="container">
-            <div class="row centrado">
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white h-100 card-external-radius gris-claro " style="">
 
 
-                            <div class="background-azul h-50 card-border-radius centrado">
-                                <img src="ing_arengy-web/static/img/Experiencia.svg" class="img-size" />
+                <!--            ########################### SECCION MOBIL DE COLUMNAS DOBLES ############################-->
+                <!--            #################todo: esta seccion cambia el orden de imagenes y texto en mobil ########-->
+
+
+                <div class="mobil-columns">
+
+                    <section class="s_text_image pt-5  o_colored_level padding_soluciones pb0"
+                             data-snippet="s_image_text"
+                             data-name="Image - Text" style="background-image: none;">
+                        <div class="container">
+                            <div class="row align-items-center o_animate o_visible o_anim_slide_in o_anim_from_left">
+                                <div class="col-lg-6 pr-0 o_colored_level padding_soluciones">
+                                    <img src="ing_arengy-web/static/img/Microrredes.jpg" class="img img-fluid mx-auto"
+                                         alt=""
+                                         loading="lazy" data-original-id="80"
+                                         data-original-src="ing_arengy-web/static/img/Microrredes.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip542572" style=""/>
+                                </div>
+                                <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right ">
+                                    <h2 class="o_default_snippet_text azul-energy">MICRORREDES</h2>
+                                    <h3 class="o_default_snippet_text azul-energy">100% RENOVABLE</h3>
+                                    <p class="o_default_snippet_text">En los últimos años, la minería en regiones de
+                                        altura,
+                                        como salares para extracción de litio, metales, o tierras raras tiene un
+                                        crecimiento
+                                        exponencial, se fundamenta en la demanda de tecnologías para generación de
+                                        energías
+                                        renovables, almacenamiento de energía, electromovilidad y telecomunicaciones.
+                                    </p>
+                                    <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
+                                    <p>
+                                        <a href="/contacto_anergy"
+                                           class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
+                                            →
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_image  o_colored_level pb0 padding_soluciones" data-snippet="s_text_image"
+                             data-name="Text - Image" style="background-image: none;">
+                        <div class="container ">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6  o_colored_level pt0 padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_right">
+                                    <img src="ing_arengy-web/static/img/Parques solares.jpg"
+                                         class="img img-fluid mx-auto"
+                                         alt="" loading="lazy" data-original-id="81"
+                                         data-original-src="ing_arengy-web/static/img/Parques solares.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip3203" style=""/>
+                                </div>
+                                <div class="col-lg-6 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_left">
+                                    <h2 class="o_default_snippet_text azul-energy">PARQUES SOLARES</h2>
+                                    <h3 class="o_default_snippet_text azul-energy">AUTOCONSUMO E INYECCION A RED</h3>
+                                    <p class="o_default_snippet_text">Desarrollamos proyectos de autoabastecimiento de
+                                        energía
+                                        mediante fuentes renovables como así también proyectos de grandes usinas de
+                                        generación
+                                        fotovoltaica para inyectar directamente en las redes troncales del sistema
+                                        interconectado de transporte y distribución de energía eléctrica. Conocemos las
+                                        coyunturas de los países
+                                    </p>
+                                    <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
+                                    <p>
+                                        <a href="/contacto_anergy"
+                                           class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
+                                            →
+                                        </a>
+                                    </p>
+                                </div>
 
                             </div>
-                            <div class="card-body h-50 gris-claro">
+                        </div>
 
-                                <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">Experiencia </h3>
-                                <p class="card-text o_default_snippet_text text-center">Explore the potential use of the FluidFM for temporal transcriptomics.</p>
+                    </section>
+                    <section class="s_text_image  o_colored_level padding_soluciones pb0" data-snippet="s_image_text"
+                             data-name="Image - Text" style="background-image: none;">
+                        <div class="container mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 pr-0 o_colored_level padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_left">
+                                    <img src="ing_arengy-web/static/img/Estabilización de red.jpg"
+                                         class="img img-fluid mx-auto"
+                                         alt="" loading="lazy" data-original-id="80"
+                                         data-original-src="ing_arengy-web/static/img/Estabilización de red.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip542572" style=""/>
+                                </div>
+                                <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right">
+                                    <h2 class="o_default_snippet_text azul-energy">ESTABILIZACIÓN DE RED</h2>
+                                    <h3 class="o_default_snippet_text azul-energy">ALMACENAMIENTO EN BATERÍAS DE LITIO
+                                    </h3>
+                                    <p class="o_default_snippet_text">Un BESS (Battery Energy Storage System) puede
+                                        ayudar a las
+                                        centrales eléctricas y a las redes eléctricas a restablecerse rápidamente tras
+                                        los
+                                        cortes de energía. En lugar de utilizar un generador diésel, los consumidores
+                                        pueden
+                                        recurrir a un sistema de almacenamiento en baterías, una solución de arranque en
+                                        negro
+                                        más barata y.
+                                    </p>
+                                    <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
+                                    <p>
+                                        <a href="/contacto_anergy"
+                                           class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
+                                            →
+                                        </a>
+                                    </p>
+                                </div>
                             </div>
+                        </div>
 
-                    </div>
+                    </section>
+
                 </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white  h-100 card-external-radius gris-claro">
-                            <div class="background-azul h-50 card-border-radius centrado">
-
-                                 <img src="ing_arengy-web/static/img/Liderazgo.svg"  class="img-size"/>
-
-                            </div>
-
-                        <div class=" card-body h50 gris-claro">
-                            <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">Liderazgo</h3>
-                            <p class="card-text text-center">Explore the potential use of the  FluidFM for temporal transcriptomics.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white  h-100 card-external-radius gris-claro" style="">
-
-                        <div class="background-azul h-50 card-border-radius centrado">
-                            <img src="ing_arengy-web/static/img/Tecnología.svg" class="img-size"/>
-                        </div>
-
-
-                        <div class="card-body h-50 gris-claro">
-                            <h3 class="card-title text-center orbitron azul-energy">Tecnología</h3>
-                            <p class="card-text text-center">Explore the potential use of the  FluidFM for temporal transcriptomics.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-            </section>
-
-
-
-
-<!--################################################################################################################################################################-->
-<!--                                                                             SECCION MOBIL-->
-<!--################################################################################################################################################################-->
-    <section class="s_three_columns slide_in_up_mobil o_anim_fade_in o_animate o_anim_from_bottom o_colored_level  " data-vcss="001" data-snippet="s_three_columns" data-name="Columnas" style="background-image: none; --wanim-intensity: 11">
-        <div class="container">
-            <div class="row centrado">
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white h-100 card-external-radius gris-claro " style="">
-
-
-                            <div class="background-azul h-50 card-border-radius centrado">
-                                <img src="ing_arengy-web/static/img/Experiencia.svg" class="img-size" />
-
-                            </div>
-                            <div class="card-body h-50 gris-claro">
-
-                                <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">Experiencia </h3>
-                                <p class="card-text o_default_snippet_text text-center">Explore the potential use of the FluidFM for temporal transcriptomics.</p>
-                            </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white  h-100 card-external-radius gris-claro">
-                            <div class="background-azul h-50 card-border-radius centrado">
-
-                                 <img src="ing_arengy-web/static/img/Liderazgo.svg"  class="img-size"/>
-
-                            </div>
-
-                        <div class=" card-body h50 gris-claro">
-                            <h3 class="card-title o_default_snippet_text text-center orbitron azul-energy">Liderazgo</h3>
-                            <p class="card-text text-center">Explore the potential use of the  FluidFM for temporal transcriptomics.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white  h-100 card-external-radius gris-claro" style="">
-
-                        <div class="background-azul h-50 card-border-radius centrado">
-                            <img src="ing_arengy-web/static/img/Tecnología.svg" class="img-size"/>
-                        </div>
-
-
-                        <div class="card-body h-50 gris-claro">
-                            <h3 class="card-title text-center orbitron azul-energy">Tecnología</h3>
-                            <p class="card-text text-center">Explore the potential use of the  FluidFM for temporal transcriptomics.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<!--        #############################FIN MOBIL########################-->
-
-    </section>
-            <section class="s_title o_colored_level pb0" data-vcss="001" data-snippet="s_title" data-name="Título"
-                     style="background-image: none;">
-                <div class="s_allow_columns container">
-                    <h1 class="orbitron" style="text-align: center;">
-                        <font style="color: rgb(27, 87, 139); ">Nuestras solucio​n​es​​</font>
-                        <font style=""/>
-                        <br/>
-                    </h1>
-                </div>
-            </section>
-
-            <div class="columns-mobil">
-            <section class="s_text_block   pb-10o_colored_level pt0" data-snippet="s_text_block" data-name="Texto"
-                     style="background-image: none;">
-                <div class="s_allow_columns container">
-                    <p style="text-align: center;">Generación, transporte y distribución de energía de base
-                        tecnológica
-                    </p>
-                </div>
-
-            </section>
-            <section class="s_text_image pt-5  o_colored_level padding_soluciones pb0" data-snippet="s_image_text"
-                     data-name="Image - Text" style="background-image: none;">
-                <div class="container">
-                    <div class="row align-items-center o_animate o_visible o_anim_slide_in o_anim_from_left">
-                        <div class="col-lg-6 pr-0 o_colored_level padding_soluciones">
-                            <img src="ing_arengy-web/static/img/Microrredes.jpg" class="img img-fluid mx-auto" alt=""
-                                 loading="lazy" data-original-id="80"
-                                 data-original-src="ing_arengy-web/static/img/Microrredes.jpg"
-                                 data-mimetype="image/jpeg" data-bs-original-title="" title=""
-                                 aria-describedby="tooltip542572" style=""/>
-                        </div>
-                        <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right ">
-                            <h2 class="o_default_snippet_text azul-energy">MICRORREDES</h2>
-                            <h3 class="o_default_snippet_text azul-energy">100% RENOVABLE</h3>
-                            <p class="o_default_snippet_text">En los últimos años, la minería en regiones de altura,
-                                como salares para extracción de litio, metales, o tierras raras tiene un crecimiento
-                                exponencial, se fundamenta en la demanda de tecnologías para generación de energías
-                                renovables, almacenamiento de energía, electromovilidad y telecomunicaciones.
-                            </p>
-                            <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
-                            <p>
-                                <a href="/contacto_anergy" class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
-                                    →
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="s_text_image  o_colored_level pb0 padding_soluciones" data-snippet="s_text_image"
-                     data-name="Text - Image" style="background-image: none;">
-                <div class="container ">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_left">
-                            <h2 class="o_default_snippet_text azul-energy">PARQUES SOLARES</h2>
-                            <h3 class="o_default_snippet_text azul-energy">AUTOCONSUMO E INYECCION A RED</h3>
-                            <p class="o_default_snippet_text">Desarrollamos proyectos de autoabastecimiento de energía
-                                mediante fuentes renovables como así también proyectos de grandes usinas de generación
-                                fotovoltaica para inyectar directamente en las redes troncales del sistema
-                                interconectado de transporte y distribución de energía eléctrica. Conocemos las
-                                coyunturas de los países
-                            </p>
-                            <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
-                            <p>
-                                <a href="/contacto_anergy" class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
-                                    →
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-lg-6  o_colored_level pt0 padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_right">
-                            <img src="ing_arengy-web/static/img/Parques solares.jpg" class="img img-fluid mx-auto"
-                                 alt="" loading="lazy" data-original-id="81"
-                                 data-original-src="ing_arengy-web/static/img/Parques solares.jpg"
-                                 data-mimetype="image/jpeg" data-bs-original-title="" title=""
-                                 aria-describedby="tooltip3203" style=""/>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <section class="s_text_image  o_colored_level padding_soluciones pb0" data-snippet="s_image_text"
-                     data-name="Image - Text" style="background-image: none;">
-                <div class="container mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 pr-0 o_colored_level padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_left">
-                            <img src="ing_arengy-web/static/img/Estabilización de red.jpg" class="img img-fluid mx-auto"
-                                 alt="" loading="lazy" data-original-id="80"
-                                 data-original-src="ing_arengy-web/static/img/Estabilización de red.jpg"
-                                 data-mimetype="image/jpeg" data-bs-original-title="" title=""
-                                 aria-describedby="tooltip542572" style=""/>
-                        </div>
-                        <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right">
-                            <h2 class="o_default_snippet_text azul-energy">ESTABILIZACIÓN DE RED</h2>
-                            <h3 class="o_default_snippet_text azul-energy">ALMACENAMIENTO EN BATERÍAS DE LITIO</h3>
-                            <p class="o_default_snippet_text">Un BESS (Battery Energy Storage System) puede ayudar a las
-                                centrales eléctricas y a las redes eléctricas a restablecerse rápidamente tras los
-                                cortes de energía. En lugar de utilizar un generador diésel, los consumidores pueden
-                                recurrir a un sistema de almacenamiento en baterías, una solución de arranque en negro
-                                más barata y.
-                            </p>
-                            <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
-                            <p>
-                                <a href="/contacto_anergy" class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
-                                    →
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-                </div>
-
-
-<!--            ########################### SECCION MOBIL DE COLUMNAS DOBLES ############################-->
-<!--            #################todo: esta seccion cambia el orden de imagenes y texto en mobil ########-->
-
-
-
-            <div class="mobil-columns">
-
-                      <section class="s_text_image pt-5  o_colored_level padding_soluciones pb0" data-snippet="s_image_text"
-                     data-name="Image - Text" style="background-image: none;">
-                <div class="container">
-                    <div class="row align-items-center o_animate o_visible o_anim_slide_in o_anim_from_left">
-                        <div class="col-lg-6 pr-0 o_colored_level padding_soluciones">
-                            <img src="ing_arengy-web/static/img/Microrredes.jpg" class="img img-fluid mx-auto" alt=""
-                                 loading="lazy" data-original-id="80"
-                                 data-original-src="ing_arengy-web/static/img/Microrredes.jpg"
-                                 data-mimetype="image/jpeg" data-bs-original-title="" title=""
-                                 aria-describedby="tooltip542572" style=""/>
-                        </div>
-                        <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right ">
-                            <h2 class="o_default_snippet_text azul-energy">MICRORREDES</h2>
-                            <h3 class="o_default_snippet_text azul-energy">100% RENOVABLE</h3>
-                            <p class="o_default_snippet_text">En los últimos años, la minería en regiones de altura,
-                                como salares para extracción de litio, metales, o tierras raras tiene un crecimiento
-                                exponencial, se fundamenta en la demanda de tecnologías para generación de energías
-                                renovables, almacenamiento de energía, electromovilidad y telecomunicaciones.
-                            </p>
-                            <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
-                            <p>
-                                <a href="/contacto_anergy" class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
-                                    →
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="s_text_image  o_colored_level pb0 padding_soluciones" data-snippet="s_text_image"
-                     data-name="Text - Image" style="background-image: none;">
-                <div class="container ">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6  o_colored_level pt0 padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_right">
-                            <img src="ing_arengy-web/static/img/Parques solares.jpg" class="img img-fluid mx-auto"
-                                 alt="" loading="lazy" data-original-id="81"
-                                 data-original-src="ing_arengy-web/static/img/Parques solares.jpg"
-                                 data-mimetype="image/jpeg" data-bs-original-title="" title=""
-                                 aria-describedby="tooltip3203" style=""/>
-                        </div>
-                        <div class="col-lg-6 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_left">
-                            <h2 class="o_default_snippet_text azul-energy">PARQUES SOLARES</h2>
-                            <h3 class="o_default_snippet_text azul-energy">AUTOCONSUMO E INYECCION A RED</h3>
-                            <p class="o_default_snippet_text">Desarrollamos proyectos de autoabastecimiento de energía
-                                mediante fuentes renovables como así también proyectos de grandes usinas de generación
-                                fotovoltaica para inyectar directamente en las redes troncales del sistema
-                                interconectado de transporte y distribución de energía eléctrica. Conocemos las
-                                coyunturas de los países
-                            </p>
-                            <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
-                            <p>
-                                <a href="/contacto_anergy" class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
-                                    →
-                                </a>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-            <section class="s_text_image  o_colored_level padding_soluciones pb0" data-snippet="s_image_text"
-                     data-name="Image - Text" style="background-image: none;">
-                <div class="container mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 pr-0 o_colored_level padding_soluciones o_animate o_visible o_anim_slide_in o_anim_from_left">
-                            <img src="ing_arengy-web/static/img/Estabilización de red.jpg" class="img img-fluid mx-auto"
-                                 alt="" loading="lazy" data-original-id="80"
-                                 data-original-src="ing_arengy-web/static/img/Estabilización de red.jpg"
-                                 data-mimetype="image/jpeg" data-bs-original-title="" title=""
-                                 aria-describedby="tooltip542572" style=""/>
-                        </div>
-                        <div class="col-lg-6  pl-0 o_colored_level o_animate o_visible o_anim_slide_in o_anim_from_right">
-                            <h2 class="o_default_snippet_text azul-energy">ESTABILIZACIÓN DE RED</h2>
-                            <h3 class="o_default_snippet_text azul-energy">ALMACENAMIENTO EN BATERÍAS DE LITIO</h3>
-                            <p class="o_default_snippet_text">Un BESS (Battery Energy Storage System) puede ayudar a las
-                                centrales eléctricas y a las redes eléctricas a restablecerse rápidamente tras los
-                                cortes de energía. En lugar de utilizar un generador diésel, los consumidores pueden
-                                recurrir a un sistema de almacenamiento en baterías, una solución de arranque en negro
-                                más barata y.
-                            </p>
-                            <!--                    <p class="o_default_snippet_text">Comience con el cliente – descubra lo que quiere y déselo.</p>-->
-                            <p>
-                                <a href="/contacto_anergy" class="btn background-azul mb-2 o_default_snippet_text color-letra">Mas info
-                                    →
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            </div>
-<!--##################################################FIN MOBIL####################################-->
-
-
-
-
-            <section class="s_banner o_colored_level s_parallax_no_overflow_hidden  section_img oe_img_bg o_bg_img_center" data-scroll-background-ratio="0" data-snippet="s_banner" data-name="Banner" style="background-image: url(&quot;ing_arengy-web/static/img/Nosotros.jpg&quot;);">
-
-        <div class="container">
-            <div class="row s_nb_column_fixed o_grid_mode" style="--grid-item-padding-y: 16px; --grid-item-padding-x: 15px;" data-row-count="5">
-
-            <div class="jumbotron rounded o_colored_level o_cc o_cc1 o_grid_item g-col-lg-12 g-height-5 col-lg-12 o_animate o_anim_zoom_in o_visible  align-text-top" data-name="Box" style="background-color: rgba(255, 0, 0, 0); grid-area: 1 / 1 / 6 / 13; z-index: 1; animation-delay: -0.018914s;" data-scroll-zone-start="0" data-scroll-zone-end="100">
-                    <h1 class=" text-center"><font style="" class="o_default_snippet_text color-letra orbitron ">Nosotros</font></h1>
-                    <p class="lead text-center color-letra">Somos una empresa de Ingeniería especializada en el diseño, desarrollo, integración, soporte a ensayos de aceptación, soporte a comisionamiento y operación de sistemas de generación, hibridación, transporte y distribución de energía de base tecnológica que utilizan fuentes renovables, comprometida con la calidad y la satisfacción del cliente.</p>
-<!--                    <a class="btn btn-primary mb-2 o_default_snippet_text" href="/contactus">Contáctenos</a>-->
-                </div></div>
-        </div>
-
-
-
-
-
-    </section>
-
-
-            <section class="s_three_columns o_cc o_cc2 o_animate o_anim_zoom_in o_visible  pt32 pb32 o_colored_level" data-vcss="001" data-snippet="s_three_columns" data-name="Columnas" style="background-image: none;">
-        <div class="container">
-            <div class="row card_posicion align-items-stretch">
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card_size">
-                    <div class="card text-bg-white h-100">
-<!--                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_1" alt="" loading="lazy" data-original-id="82" data-original-src="/web/image/website.library_image_11" data-mimetype="image/jpeg"/>-->
-                        <div class="card-body">
-                            <img src="ing_arengy-web/static/Iconos/Partner.svg"/>
-                            <h3 class="card-title o_default_snippet_text">Partner tecnológico</h3>
-                            <p class="card-text o_default_snippet_text">Growth initially was a Social Media Marketing Agency, before shaping its mission just on social media with the heart of our marketing campaigns.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card_size">
-                    <div class="card text-bg-white h-100">
-<!--                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_2" alt="" loading="lazy" data-original-id="83" data-original-src="/web/image/website.library_image_13" data-mimetype="image/jpeg"/>-->
-                        <div class="card-body">
-                            <img src="ing_arengy-web/static/Iconos/Calidad.svg"/>
-                            <h3 class="card-title o_default_snippet_text">Calidad</h3>
-                            <p class="card-text o_default_snippet_text">Growth initially was a Social Media Marketing Agency, before shaping its mission just on social media with the heart of our marketing campaigns.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card_size">
-                    <div class="card text-bg-white h-100">
-<!--                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_3" alt="" loading="lazy" data-original-id="84" data-original-src="/web/image/website.library_image_07" data-mimetype="image/jpeg"/>-->
-                        <div class="card-body">
-                            <img src="ing_arengy-web/static/Iconos/Transparencia.svg"/>
-                            <h3 class="card-title o_default_snippet_text">Transparencia</h3>
-                            <p class="card-text o_default_snippet_text">Growth initially was a Social Media Marketing Agency, before shaping its mission just on social media with the heart of our marketing campaigns.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-            </section><section class="s_three_columns  o_anim_fade_in o_animate o_anim_from_bottom background_gradient pt32 pb32 o_colored_level o_cc o_cc2" data-vcss="001" data-snippet="s_three_columns" data-name="Columnas" style="background-image: none; --wanim-intensity: 11;">
-        <div class="container">
-
-             <h1 class=" text-center"><font  class="o_default_snippet_text color-letra orbitron ">Proceso de trabajo</font></h1>
-                    <p class="lead text-center color-letra">Somos el partner estratégico de tus proyectos</p>
-
-
-
-            <div class="row centrado  ">
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white h-100  card-border-radius" style="">
-
-
-                            <div class=" h-25 centrado">
-
-                                <img src="ing_arengy-web/static/Iconos/Frame 42.svg" class="img-num-size" />
-
-                            </div>
-                            <div class="card-body h-75">
-                                <h3 class="azul-energy text-center orbitron"> Desarrollo</h3>
-
-                                <p class="card-text o_default_snippet_text text-center">Explore the potential use of the
-                                    FluidFM for temporal.
-                                    Explore the potential use of the
-                                    FluidFM for temporal.
-                                    Explore the potential use of the
-                                    FluidFM for temporal.
+                <!--##################################################FIN MOBIL####################################-->
+
+
+                <section
+                        class="s_banner o_colored_level s_parallax_no_overflow_hidden  section_img oe_img_bg o_bg_img_center"
+                        data-scroll-background-ratio="0" data-snippet="s_banner" data-name="Banner"
+                        style="background-image: url(&quot;ing_arengy-web/static/img/Nosotros.jpg&quot;);">
+
+                    <div class="container">
+                        <div class="row s_nb_column_fixed o_grid_mode"
+                             style="--grid-item-padding-y: 16px; --grid-item-padding-x: 15px;" data-row-count="5">
+
+                            <div class="jumbotron rounded o_colored_level o_cc o_cc1 o_grid_item g-col-lg-12 g-height-5 col-lg-12 o_animate o_anim_zoom_in o_visible  align-text-top"
+                                 data-name="Box"
+                                 style="background-color: rgba(255, 0, 0, 0); grid-area: 1 / 1 / 6 / 13; z-index: 1; animation-delay: -0.018914s;"
+                                 data-scroll-zone-start="0" data-scroll-zone-end="100">
+                                <h1 class=" text-center">
+                                    <font style="" class="o_default_snippet_text color-letra orbitron ">Nosotros</font>
+                                </h1>
+                                <p class="lead text-center color-letra">Somos una empresa de Ingeniería especializada en
+                                    el diseño, desarrollo, integración, soporte a ensayos de aceptación, soporte a
+                                    comisionamiento y operación de sistemas de generación, hibridación, transporte y
+                                    distribución de energía de base tecnológica que utilizan fuentes renovables,
+                                    comprometida con la calidad y la satisfacción del cliente.
                                 </p>
+                                <!--                    <a class="btn btn-primary mb-2 o_default_snippet_text" href="/contactus">Contáctenos</a>-->
                             </div>
-
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
-                    <div class="card text-bg-white h-100  card-border-radius">
-                            <div class=" h-25  centrado">
 
-                                 <img src="ing_arengy-web/static/Iconos/num2.svg"  class="img-num-size"/>
 
+                </section>
+
+
+                <section
+                        class="s_three_columns o_cc o_cc2 o_animate o_anim_zoom_in o_visible  pt32 pb32 o_colored_level"
+                        data-vcss="001" data-snippet="s_three_columns" data-name="Columnas"
+                        style="background-image: none;">
+                    <div class="container">
+                        <div class="row card_posicion align-items-stretch">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card_size">
+                                <div class="card text-bg-white h-100">
+                                    <!--                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_1" alt="" loading="lazy" data-original-id="82" data-original-src="/web/image/website.library_image_11" data-mimetype="image/jpeg"/>-->
+                                    <div class="card-body">
+                                        <img src="ing_arengy-web/static/Iconos/Partner.svg"/>
+                                        <h3 class="card-title o_default_snippet_text">Partner tecnológico</h3>
+                                        <p class="card-text o_default_snippet_text">Growth initially was a Social Media
+                                            Marketing Agency, before shaping its mission just on social media with the
+                                            heart of our marketing campaigns.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-
-                        <div class=" card-body h-75">
-                               <h3 class="azul-energy text-center orbitron"> Construccion</h3>
-                            <p class="card-text text-center">Explore the potential use of the
-                                FluidFM for temporal.
-                                Explore the potential use of the
-                                FluidFM for temporal.
-                                Explore the potential use of the
-                                FluidFM for temporal..
-                            </p>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card_size">
+                                <div class="card text-bg-white h-100">
+                                    <!--                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_2" alt="" loading="lazy" data-original-id="83" data-original-src="/web/image/website.library_image_13" data-mimetype="image/jpeg"/>-->
+                                    <div class="card-body">
+                                        <img src="ing_arengy-web/static/Iconos/Calidad.svg"/>
+                                        <h3 class="card-title o_default_snippet_text">Calidad</h3>
+                                        <p class="card-text o_default_snippet_text">Growth initially was a Social Media
+                                            Marketing Agency, before shaping its mission just on social media with the
+                                            heart of our marketing campaigns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 card_size">
+                                <div class="card text-bg-white h-100">
+                                    <!--                        <img class="card-img-top" src="/web/image/website.s_three_columns_default_image_3" alt="" loading="lazy" data-original-id="84" data-original-src="/web/image/website.library_image_07" data-mimetype="image/jpeg"/>-->
+                                    <div class="card-body">
+                                        <img src="ing_arengy-web/static/Iconos/Transparencia.svg"/>
+                                        <h3 class="card-title o_default_snippet_text">Transparencia</h3>
+                                        <p class="card-text o_default_snippet_text">Growth initially was a Social Media
+                                            Marketing Agency, before shaping its mission just on social media with the
+                                            heart of our marketing campaigns.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16  min-card pb16">
-                    <div class="card text-bg-white h-100  card-border-radius " style="">
-
-                        <div class=" h-25 centrado">
-                                 <img src="ing_arengy-web/static/Iconos/num3.svg" class="img-num-size"/>
 
 
-                        </div>
+                </section>
+                <section
+                        class="s_three_columns  o_anim_fade_in o_animate o_anim_from_bottom background_gradient pt32 pb32 o_colored_level o_cc o_cc2"
+                        data-vcss="001" data-snippet="s_three_columns" data-name="Columnas"
+                        style="background-image: none; --wanim-intensity: 11;">
+                    <div class="container">
+
+                        <h1 class=" text-center">
+                            <font class="o_default_snippet_text color-letra orbitron ">Proceso de trabajo</font>
+                        </h1>
+                        <p class="lead text-center color-letra">Somos el partner estratégico de tus proyectos</p>
 
 
-                        <div class="card-body h-75">
-                                <h3 class="azul-energy text-center orbitron"> Operación</h3>
-                            <p class="card-text text-center">Explore the potential use of the
-                                FluidFM for temporal.
-                            Explore the potential use of the
-                            FluidFM for temporal.
-                            Explore the potential use of the
-                            FluidFM for temporal.</p>
+                        <div class="row centrado  ">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white h-100  card-border-radius" style="">
+
+
+                                    <div class=" h-25 centrado">
+
+                                        <img src="ing_arengy-web/static/Iconos/Frame 42.svg" class="img-num-size"/>
+
+                                    </div>
+                                    <div class="card-body h-75">
+                                        <h3 class="azul-energy text-center orbitron">Desarrollo</h3>
+
+                                        <p class="card-text o_default_snippet_text text-center">Explore the potential
+                                            use of the
+                                            FluidFM for temporal.
+                                            Explore the potential use of the
+                                            FluidFM for temporal.
+                                            Explore the potential use of the
+                                            FluidFM for temporal.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16 min-card">
+                                <div class="card text-bg-white h-100  card-border-radius">
+                                    <div class=" h-25  centrado">
+
+                                        <img src="ing_arengy-web/static/Iconos/num2.svg" class="img-num-size"/>
+
+                                    </div>
+
+                                    <div class=" card-body h-75">
+                                        <h3 class="azul-energy text-center orbitron">Construccion</h3>
+                                        <p class="card-text text-center">Explore the potential use of the
+                                            FluidFM for temporal.
+                                            Explore the potential use of the
+                                            FluidFM for temporal.
+                                            Explore the potential use of the
+                                            FluidFM for temporal..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16  min-card pb16">
+                                <div class="card text-bg-white h-100  card-border-radius " style="">
+
+                                    <div class=" h-25 centrado">
+                                        <img src="ing_arengy-web/static/Iconos/num3.svg" class="img-num-size"/>
+
+
+                                    </div>
+
+
+                                    <div class="card-body h-75">
+                                        <h3 class="azul-energy text-center orbitron">Operación</h3>
+                                        <p class="card-text text-center">Explore the potential use of the
+                                            FluidFM for temporal.
+                                            Explore the potential use of the
+                                            FluidFM for temporal.
+                                            Explore the potential use of the
+                                            FluidFM for temporal.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+
+                </section>
+                <section class="s_title pt40 o_colored_level pb0" data-vcss="001" data-snippet="s_title"
+                         data-name="Título" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                        <h1 class=" text-center">
+                            <font class="o_default_snippet_text azul-energy orbitron ">Usamos la energia mas
+                                conveniente
+                            </font>
+                        </h1>
+                    </div>
+                </section>
+                <section class="s_text_block pb-0 o_colored_level pt4" data-snippet="s_text_block" data-name="Texto"
+                         style="background-image: none;">
+                    <div class="s_allow_columns container">
+                        <p class="text-center " style="font-size: 18px;">
+                            Sustituimos suministros costosos y poco confiables por suministros de energía más
+                        </p>
+                        <p style="font-size: 18px;" class="text-center ">convenientes, tanto para tu economía como para
+                            el medio ambiente.
+                        </p>
+                    </div>
+                </section>
+                <section class="s_picture pb24 o_colored_level pt0 o_cc o_cc1" data-snippet="s_picture" data-name="Foto"
+                         style="">
+                    <div class="container">
+                        <p>
+                            <br/>
+                        </p>
+                        <div class="row s_nb_column_fixed o_anim_fade_in o_animate o_anim_from_bottom "
+                             style="--wanim-intensity: 11;">
+                            <div class="pb24 o_colored_level  col-lg-12" style="text-align: center;">
+                                <figure class="figure">
+                                    <img src="ing_arengy-web/static/img/Home - infografia.jpg"
+                                         class="figure-img img-thumbnail  padding-large" alt="" loading="lazy"
+                                         data-original-id="88"
+                                         data-original-src="ing_arengy-web/static/img/Home - infografia.jpg"
+                                         data-mimetype="image/jpeg" data-bs-original-title="" title=""
+                                         aria-describedby="tooltip342965"/>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="s_references pt48 pb32 o_colored_level" data-snippet="s_references"
+                         data-name="Referencias" style="background-image: none;">
+                    <div class="container">
+                        <h1 style="text-align: center;">
+                            <font class="azul-energy orbitron">Confían en nosotros&amp;nbsp;</font>
+                        </h1>
+                        <p style="text-align: center;">
+                            <br/>
+                        </p>
+
+                        <div class="row centrado">
+                            <!--            <div class="col-lg-2 pt16 pb16 o_colored_level"><br/></div>-->
+
+                            <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
+
+                                <img src="ing_arengy-web/static/Iconos/company-logo-1.svg" class="img img-fluid mx-auto"
+                                     alt="" loading="lazy" data-original-id="92"
+                                     data-original-src="ing_arengy-web/static/Iconos/company-logo-1.svg"
+                                     data-mimetype="image/png"/>
+                            </div>
+                            <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
+                                <img src="ing_arengy-web/static/Iconos/company-logo-2.svg" class="img img-fluid mx-auto"
+                                     alt="" loading="lazy" data-original-id="93"
+                                     data-original-src="ing_arengy-web/static/Iconos/company-logo-2.svg"
+                                     data-mimetype="image/png"/>
+                            </div>
+                            <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
+                                <img src="ing_arengy-web/static/Iconos/company-logo-3.svg" class="img img-fluid mx-auto"
+                                     alt="" loading="lazy" data-original-id="94"
+                                     data-original-src="ing_arengy-web/static/Iconos/company-logo-3.svg"
+                                     data-mimetype="image/png"/>
+                            </div>
+                            <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
+                                <img src="ing_arengy-web/static/Iconos/company-logo-4.svg" class="img img-fluid mx-auto"
+                                     alt="" loading="lazy" data-original-id="95"
+                                     data-original-src="ing_arengy-web/static/Iconos/company-logo-4.svg"
+                                     data-mimetype="image/png"/>
+                            </div>
+                            <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
+                                <img src="ing_arengy-web/static/Iconos/company-logo-5.svg" class="img img-fluid mx-auto"
+                                     alt="" loading="lazy" data-original-id="96"
+                                     data-original-src="ing_arengy-web/static/Iconos/company-logo-5.svg"
+                                     data-mimetype="image/png"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
 
 
-
-
-
-
-
-    </section><section class="s_title pt40 o_colored_level pb0" data-vcss="001" data-snippet="s_title" data-name="Título" style="background-image: none;">
-        <div class="container s_allow_columns">
-<h1 class=" text-center"><font  class="o_default_snippet_text azul-energy orbitron ">Usamos la energia mas conveniente</font></h1>
-        </div>
-    </section><section class="s_text_block pb-0 o_colored_level pt4" data-snippet="s_text_block" data-name="Texto" style="background-image: none;">
-        <div class="s_allow_columns container">
-            <p  class="text-center " style="font-size: 18px;">
-                Sustituimos suministros costosos y poco confiables por suministros de energía más
-            </p>
-            <p style="font-size: 18px;" class="text-center "> convenientes, tanto para tu economía como para el medio ambiente.</p>
-        </div>
-    </section><section class="s_picture pb24 o_colored_level pt0 o_cc o_cc1" data-snippet="s_picture" data-name="Foto" style="">
-        <div class="container">
-            <p><br/></p><div class="row s_nb_column_fixed o_anim_fade_in o_animate o_anim_from_bottom " style="--wanim-intensity: 11;">
-                <div class="pb24 o_colored_level  col-lg-12" style="text-align: center;">
-                    <figure class="figure">
-                        <img src="ing_arengy-web/static/img/Home - infografia.jpg" class="figure-img img-thumbnail  padding-large" alt="" loading="lazy" data-original-id="88" data-original-src="ing_arengy-web/static/img/Home - infografia.jpg" data-mimetype="image/jpeg" data-bs-original-title="" title="" aria-describedby="tooltip342965"/>
-                    </figure>
-                </div>
-            </div>
-        </div>
-
-
-
-    </section><section class="s_references pt48 pb32 o_colored_level" data-snippet="s_references" data-name="Referencias" style="background-image: none;">
-        <div class="container">
-            <h1 style="text-align: center;"><font class="azul-energy orbitron">Confían en nosotros&amp;nbsp;</font></h1>
-            <p style="text-align: center;"><br/></p>
-
-            <div class="row centrado">
-<!--            <div class="col-lg-2 pt16 pb16 o_colored_level"><br/></div>-->
-
-            <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
-
-                <img src="ing_arengy-web/static/Iconos/company-logo-1.svg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="92" data-original-src="ing_arengy-web/static/Iconos/company-logo-1.svg" data-mimetype="image/png"/>
-                </div>
-                <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
-                    <img src="ing_arengy-web/static/Iconos/company-logo-2.svg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="93" data-original-src="ing_arengy-web/static/Iconos/company-logo-2.svg" data-mimetype="image/png"/>
-                </div>
-                <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
-                    <img src="ing_arengy-web/static/Iconos/company-logo-3.svg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="94" data-original-src="ing_arengy-web/static/Iconos/company-logo-3.svg" data-mimetype="image/png"/>
-                </div>
-                <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
-                    <img src="ing_arengy-web/static/Iconos/company-logo-4.svg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="95" data-original-src="ing_arengy-web/static/Iconos/company-logo-4.svg" data-mimetype="image/png"/>
-                </div>
-                <div class="col-lg-2 pt16 pb16 o_colored_level img_zoom">
-                    <img src="ing_arengy-web/static/Iconos/company-logo-5.svg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="96" data-original-src="ing_arengy-web/static/Iconos/company-logo-5.svg" data-mimetype="image/png"/>
-                </div>
-            </div>
-        </div>
-    </section></div>
-
-
-<!--        NUEVA SECCION DE MAPA-->
-        <div class="background_gradient">
-        <section class="s_title pt40 pb40 background_gradient o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Título" style="background-image: none;">
-        <div class="container s_allow_columns">
-            <h1 class="color-letra orbitron" style="text-align: center;"><font  class="orbitron o_default_snippet_text">Presencia en Argentina</font></h1>
-        </div>
-    </section>
-            <section class="s_three_columns desk_localizacion background_gradient o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001" data-snippet="s_three_columns" data-name="Columnas" style="background-image: none;">
-        <div class="container">
-            <div class="row d-flex align-items-stretch">
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                    <div class="card text-bg-white h-100  " style="border-radius: 10px !important; max-width: 341px;">
-                        <!--                        <div class="card-body">-->
-                        <!--                            <h3 class="card-title o_default_snippet_text">Característica uno</h3>-->
-                        <!--                            <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>-->
-                        <!--                        </div>-->
-                        <div class="general-container h-100">
-                            <div class="Salta">
-                                <h3 class="" style="padding-left:63px; color:black;">Salta</h3>
-                                <div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(62, 240, 166, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Microgrid-pv mariana</p>
-
-                                            <p class="p-0 m-0">150 Mwp/360 MWh</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(62, 198, 240, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Hybrid Eramine</p>
-
-                                            <p class="p-0 m-0">10 MWp / 10 MWh</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(240, 159, 62, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Microgrid Posco</p>
-
-                                            <p class="p-0 m-0">30 MWp / 130 MWh</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="chaco">
-                                <h3 class=" " style="padding-left:63px; color:black;">Chaco</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado" style="background: rgba(87, 62, 240, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">Hybrid Comandancia Frias</p>
-
-                                        <p class="p-0 m-0">0,8 MW / Solar 220 kWp</p>
-                                    </div>
-                                </div>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(223, 68, 133, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Pampa del infierno</p>
-
-                                        <p class="p-0 m-0">150 MWp</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rio">
-                                <h3 class="" style="padding-left:63px; color:black">Rio Negro</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(36, 187, 151, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">Hybrid PITBA</p>
-
-                                        <p class="p-0 m-0">20 MWp / 20 MWh</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                    <div class="card text-bg-white h-100" style="background:none; border:none;">
-
-                        <img src="ing_arengy-web/static/img/argentina.png" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="96" data-original-src="ing_arengy-web/static/Iconos/company-logo-5.svg" data-mimetype="image/png"/>
-
+            <!--        NUEVA SECCION DE MAPA-->
+            <div class="background_gradient">
+                <section class="s_title pt40 pb40 background_gradient o_colored_level" data-vcss="001"
+                         data-snippet="s_title" data-name="Título" style="background-image: none;">
+                    <div class="container s_allow_columns">
+                        <h1 class="color-letra orbitron" style="text-align: center;">
+                            <font class="orbitron o_default_snippet_text">Presencia en Argentina</font>
+                        </h1>
                     </div>
-                </div>
+                </section>
+                <section
+                        class="s_three_columns desk_localizacion background_gradient o_cc o_cc2 pt32 pb32 o_colored_level"
+                        data-vcss="001" data-snippet="s_three_columns" data-name="Columnas"
+                        style="background-image: none;">
+                    <div class="container">
+                        <div class="row d-flex align-items-stretch">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                <div class="card text-bg-white h-100  "
+                                     style="border-radius: 10px !important; max-width: 341px;">
+                                    <!--                        <div class="card-body">-->
+                                    <!--                            <h3 class="card-title o_default_snippet_text">Característica uno</h3>-->
+                                    <!--                            <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>-->
+                                    <!--                        </div>-->
+                                    <div class="general-container h-100">
+                                        <div class="Salta">
+                                            <h3 class="" style="padding-left:63px; color:black;">Salta</h3>
+                                            <div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(62, 240, 166, 1); margin-top:5px;">
 
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                    <div class="card text-bg-white h-100" style="max-width:341px; border-radius:10px !important;">
-                                  <div class="general-container h-100">
-                            <div class="Salta">
-                                <h3 class="" style="padding-left:63px; color:black;">Cordoba</h3>
-                                <div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(62, 134, 240, 1); margin-top:5px;">
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Microgrid-pv mariana</p>
 
+                                                        <p class="p-0 m-0">150 Mwp/360 MWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(62, 198, 240, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Hybrid Eramine</p>
+
+                                                        <p class="p-0 m-0">10 MWp / 10 MWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(240, 159, 62, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Microgrid Posco</p>
+
+                                                        <p class="p-0 m-0">30 MWp / 130 MWh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">UTTY-PV Villa de Maria</p>
 
-                                            <p class="p-0 m-0">35 MWp</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(162, 62, 240, 1); margin-top:5px;">
+                                        <div class="chaco">
+                                            <h3 class=" " style="padding-left:63px; color:black;">Chaco</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(87, 62, 240, 1); margin-top:5px;">
 
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Hybrid Agroservicios</p>
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">Hybrid Comandancia Frias</p>
 
-                                            <p class="p-0 m-0">150 kW / Solar 40 kW</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(240, 223, 62, 1); margin-top:5px;">
+                                                    <p class="p-0 m-0">0,8 MW / Solar 220 kWp</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(223, 68, 133, 1); margin-top:5px;">
 
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Microgrid Cerro Negro</p>
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Pampa del infierno</p>
 
-                                            <p class="p-0 m-0">1,25 MWac / 12 Hs autonomy</p>
+                                                    <p class="p-0 m-0">150 MWp</p>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="rio">
+                                            <h3 class="" style="padding-left:63px; color:black">Rio Negro</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(36, 187, 151, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">Hybrid PITBA</p>
+
+                                                    <p class="p-0 m-0">20 MWp / 20 MWh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                <div class="card text-bg-white h-100" style="background:none; border:none;">
 
-                            <div class="chaco">
-                                <h3 class=" " style="padding-left:63px; color:black;">La Rioja</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado" style="background: rgba(240, 223, 62, 1); margin-top:5px;">
+                                    <img src="ing_arengy-web/static/img/argentina.png" class="img img-fluid mx-auto"
+                                         alt="" loading="lazy" data-original-id="96"
+                                         data-original-src="ing_arengy-web/static/Iconos/company-logo-5.svg"
+                                         data-mimetype="image/png"/>
 
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Nonogasta 2 y 3</p>
-
-                                        <p class="p-0 m-0">27 MWp</p>
-                                    </div>
-                                </div>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(130, 240, 62, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Las Lomas</p>
-
-                                        <p class="p-0 m-0">30 MWp</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rio">
-                                <h3 class="" style="padding-left:63px; color:black">Mendoza</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(192, 221, 13, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Malargüe</p>
-
-                                        <p class="p-0 m-0">60 MWp</p>
-                                    </div>
                                 </div>
                             </div>
 
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                <div class="card text-bg-white h-100"
+                                     style="max-width:341px; border-radius:10px !important;">
+                                    <div class="general-container h-100">
+                                        <div class="Salta">
+                                            <h3 class="" style="padding-left:63px; color:black;">Cordoba</h3>
+                                            <div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(62, 134, 240, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">UTTY-PV Villa de Maria</p>
+
+                                                        <p class="p-0 m-0">35 MWp</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(162, 62, 240, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Hybrid Agroservicios</p>
+
+                                                        <p class="p-0 m-0">150 kW / Solar 40 kW</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(240, 223, 62, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Microgrid Cerro Negro</p>
+
+                                                        <p class="p-0 m-0">1,25 MWac / 12 Hs autonomy</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chaco">
+                                            <h3 class=" " style="padding-left:63px; color:black;">La Rioja</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(240, 223, 62, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Nonogasta 2 y 3</p>
+
+                                                    <p class="p-0 m-0">27 MWp</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(130, 240, 62, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Las Lomas</p>
+
+                                                    <p class="p-0 m-0">30 MWp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rio">
+                                            <h3 class="" style="padding-left:63px; color:black">Mendoza</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(192, 221, 13, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Malargüe</p>
+
+                                                    <p class="p-0 m-0">60 MWp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-                </div>
+                </section>
+
+
+                <!--            ##############todo:SECCION PARA MOBIL ##################################-->
+
+
+                <section
+                        class="s_three_columns background_gradient mobil_localizacion o_cc o_cc2 pt32 pb32 o_colored_level"
+                        data-vcss="001" data-snippet="s_three_columns" data-name="Columnas"
+                        style="background-image: none;">
+                    <div class="container">
+                        <div class="row d-flex align-items-stretch">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                <div class="card text-bg-white h-100" style="background:none; border:none;">
+
+                                    <img src="ing_arengy-web/static/img/argentina.png" class="img img-fluid mx-auto"
+                                         alt="" loading="lazy" data-original-id="96"
+                                         data-original-src="ing_arengy-web/static/Iconos/company-logo-5.svg"
+                                         data-mimetype="image/png"/>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+
+                                <div class="card text-bg-white h-100  "
+                                     style="border-radius: 10px !important; max-width: 341px;">
+                                    <!--                        <div class="card-body">-->
+                                    <!--                            <h3 class="card-title o_default_snippet_text">Característica uno</h3>-->
+                                    <!--                            <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>-->
+                                    <!--                        </div>-->
+                                    <div class="general-container h-100">
+                                        <div class="Salta">
+                                            <h3 class="" style="padding-left:63px; color:black;">Salta</h3>
+                                            <div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(62, 240, 166, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Microgrid-pv mariana</p>
+
+                                                        <p class="p-0 m-0">150 Mwp/360 MWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(62, 198, 240, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Hybrid Eramine</p>
+
+                                                        <p class="p-0 m-0">10 MWp / 10 MWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(240, 159, 62, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Microgrid Posco</p>
+
+                                                        <p class="p-0 m-0">30 MWp / 130 MWh</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chaco">
+                                            <h3 class=" " style="padding-left:63px; color:black;">Chaco</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(87, 62, 240, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">Hybrid Comandancia Frias</p>
+
+                                                    <p class="p-0 m-0">0,8 MW / Solar 220 kWp</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(223, 68, 133, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Pampa del infierno</p>
+
+                                                    <p class="p-0 m-0">150 MWp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rio">
+                                            <h3 class="" style="padding-left:63px; color:black">Rio Negro</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(36, 187, 151, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">Hybrid PITBA</p>
+
+                                                    <p class="p-0 m-0">20 MWp / 20 MWh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                                <div class="card text-bg-white h-100"
+                                     style="max-width:341px; border-radius:10px !important;">
+                                    <div class="general-container h-100">
+                                        <div class="Salta">
+                                            <h3 class="" style="padding-left:63px; color:black;">Cordoba</h3>
+                                            <div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(62, 134, 240, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">UTTY-PV Villa de Maria</p>
+
+                                                        <p class="p-0 m-0">35 MWp</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(162, 62, 240, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Hybrid Agroservicios</p>
+
+                                                        <p class="p-0 m-0">150 kW / Solar 40 kW</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-localizacion">
+                                                    <div class="cuadrado"
+                                                         style="background:rgba(240, 223, 62, 1); margin-top:5px;">
+
+                                                    </div>
+                                                    <div style="padding-left:20px">
+                                                        <p class="p-0 m-0">Microgrid Cerro Negro</p>
+
+                                                        <p class="p-0 m-0">1,25 MWac / 12 Hs autonomy</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="chaco">
+                                            <h3 class=" " style="padding-left:63px; color:black;">La Rioja</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(240, 223, 62, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Nonogasta 2 y 3</p>
+
+                                                    <p class="p-0 m-0">27 MWp</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(130, 240, 62, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Las Lomas</p>
+
+                                                    <p class="p-0 m-0">30 MWp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rio">
+                                            <h3 class="" style="padding-left:63px; color:black">Mendoza</h3>
+                                            <div class="flex-localizacion">
+                                                <div class="cuadrado"
+                                                     style="background: rgba(192, 221, 13, 1); margin-top:5px;">
+
+                                                </div>
+                                                <div style="padding-left:20px">
+                                                    <p class="p-0 m-0">UTTY-PV Malargüe</p>
+
+                                                    <p class="p-0 m-0">60 MWp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
             </div>
-        </div>
-    </section>
+        </t>
 
 
-<!--            ##############todo:SECCION PARA MOBIL ##################################-->
-
-
-
-                  <section class="s_three_columns background_gradient mobil_localizacion o_cc o_cc2 pt32 pb32 o_colored_level" data-vcss="001" data-snippet="s_three_columns" data-name="Columnas" style="background-image: none;">
-        <div class="container">
-            <div class="row d-flex align-items-stretch">
-                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                    <div class="card text-bg-white h-100" style="background:none; border:none;">
-
-                        <img src="ing_arengy-web/static/img/argentina.png" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="96" data-original-src="ing_arengy-web/static/Iconos/company-logo-5.svg" data-mimetype="image/png"/>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-
-                    <div class="card text-bg-white h-100  " style="border-radius: 10px !important; max-width: 341px;">
-                        <!--                        <div class="card-body">-->
-                        <!--                            <h3 class="card-title o_default_snippet_text">Característica uno</h3>-->
-                        <!--                            <p class="card-text o_default_snippet_text">Adapte estas tres columnas para que se ajusten a sus necesidades de diseño Para duplicar, eliminar o mover columnas, seleccione la columna y use los iconos superiores para realizar su acción.</p>-->
-                        <!--                        </div>-->
-                        <div class="general-container h-100">
-                            <div class="Salta">
-                                <h3 class="" style="padding-left:63px; color:black;">Salta</h3>
-                                <div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(62, 240, 166, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Microgrid-pv mariana</p>
-
-                                            <p class="p-0 m-0">150 Mwp/360 MWh</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(62, 198, 240, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Hybrid Eramine</p>
-
-                                            <p class="p-0 m-0">10 MWp / 10 MWh</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(240, 159, 62, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Microgrid Posco</p>
-
-                                            <p class="p-0 m-0">30 MWp / 130 MWh</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="chaco">
-                                <h3 class=" " style="padding-left:63px; color:black;">Chaco</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado" style="background: rgba(87, 62, 240, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">Hybrid Comandancia Frias</p>
-
-                                        <p class="p-0 m-0">0,8 MW / Solar 220 kWp</p>
-                                    </div>
-                                </div>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(223, 68, 133, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Pampa del infierno</p>
-
-                                        <p class="p-0 m-0">150 MWp</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rio">
-                                <h3 class="" style="padding-left:63px; color:black">Rio Negro</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(36, 187, 151, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">Hybrid PITBA</p>
-
-                                        <p class="p-0 m-0">20 MWp / 20 MWh</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        </div>
-                </div>
-
-
-                <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
-                    <div class="card text-bg-white h-100" style="max-width:341px; border-radius:10px !important;">
-                                  <div class="general-container h-100">
-                            <div class="Salta">
-                                <h3 class="" style="padding-left:63px; color:black;">Cordoba</h3>
-                                <div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(62, 134, 240, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">UTTY-PV Villa de Maria</p>
-
-                                            <p class="p-0 m-0">35 MWp</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(162, 62, 240, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Hybrid Agroservicios</p>
-
-                                            <p class="p-0 m-0">150 kW / Solar 40 kW</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-localizacion">
-                                        <div class="cuadrado" style="background:rgba(240, 223, 62, 1); margin-top:5px;">
-
-                                        </div>
-                                        <div style="padding-left:20px">
-                                            <p class="p-0 m-0">Microgrid Cerro Negro</p>
-
-                                            <p class="p-0 m-0">1,25 MWac / 12 Hs autonomy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="chaco">
-                                <h3 class=" " style="padding-left:63px; color:black;">La Rioja</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado" style="background: rgba(240, 223, 62, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Nonogasta 2 y 3</p>
-
-                                        <p class="p-0 m-0">27 MWp</p>
-                                    </div>
-                                </div>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(130, 240, 62, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Las Lomas</p>
-
-                                        <p class="p-0 m-0">30 MWp</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rio">
-                                <h3 class="" style="padding-left:63px; color:black">Mendoza</h3>
-                                <div class="flex-localizacion">
-                                    <div class="cuadrado"
-                                         style="background: rgba(192, 221, 13, 1); margin-top:5px;">
-
-                                    </div>
-                                    <div style="padding-left:20px">
-                                        <p class="p-0 m-0">UTTY-PV Malargüe</p>
-
-                                        <p class="p-0 m-0">60 MWp</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-        </div>
-    </t>
-
-
- </template>
-
-
+    </template>
 
 
     <record id="home_page_arengy" model="website.page">
         <field name="name">HOME ARENGY</field>
         <field name="website_published">True</field>
         <field name="type">qweb</field>
-        <field name="url">/home_arengy</field>
+        <field name="url">/</field>
         <field name="view_id" ref="ing_home"/>
     </record>
 
