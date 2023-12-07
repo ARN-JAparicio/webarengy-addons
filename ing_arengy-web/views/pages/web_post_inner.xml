@@ -31,15 +31,15 @@
             <section class="s_text_image  pb32 o_colored_level" data-snippet="s_image_text"
                      data-name="Image - Text" style="background-image: none;">
                 <div class="" style="background: #EFEFEFE5; ">
-                    <div class="col-lg-12" style="padding-right: 0px !important;">
+                    <div class="col-lg-12 text-center" style="padding-right: 0px !important;">
                         <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
-                             class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
+                             class="img img-fluid mx-auto" style="margin-right:0px !important; display:inline !important;"/>
                     </div>
                     <div class=" ">
-                        <div class="col-lg-12 pb16 o_colored_level text-center"
+                        <div class="col-lg-12 pb16 o_colored_level "
                              style="padding-left:10%; padding-right:10%">
 
-                            <h4 class="o_default_snippet_text mt-3 azul-energy orbitron text-800"
+                            <h4 class="o_default_snippet_text mt-3 text-center azul-energy orbitron text-800"
                                 style="font-weight: bolder;"
                                 t-esc="id.name"></h4>
 

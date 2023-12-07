@@ -1,141 +1,307 @@
 <odoo>
 
-    <template id="page_curso_inner" name="Inner curso">
-        <t t-call="website.layout">
+    <record id="page_inner_course" model="website.page">
+        <field name="name">Inner Course</field>
+        <field name="website_published">True</field>
+        <field name="type">qweb</field>
+        <field name="url">/cursos</field>
+        <field name="key">ing_arengy-web.page_inner_curso_arengy</field>
 
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
-            </style>
-            <section class="s_text_image gris-claro pb32 o_colored_level" data-snippet="s_image_text"
-                     data-name="Image - Text" style="background-image: none;">
-                <div class=" gris-claro" >
-                    <div class="col-lg-12" style="padding-right: 0px !important;">
-                        <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
-                             class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
-                    </div>
-                    <div class=" ">
-                        <div class="col-lg-12 pb16 o_colored_level text-center"
-                             style="padding-left:10%; padding-right:10%">
-
-                            <h4 class="o_default_snippet_text mt-3 azul-energy orbitron text-800"
-                                style="font-weight: bolder;"
-                                t-esc="id.name"></h4>
-
-                            <h6 class="o_default_snippet_text mt-3 text-600 "
-                                style="text-align: justify !important; color:black !important;" t-esc="id.description"></h6>
-                                  <a
-                                         t-attf-href="/slides/#{slug(id)}"
-                                         class="btn btn_matricula background-azul color-letra"
-                                         style="border-radius:5px;">
-                                     Matricularme →
-                                  </a>
+        <field name="arch" type="xml">
 
 
+            <t t-call="website.layout">
 
-                            <h3 class="azul-energy " style="text-align: center; margin-top:20px;">
-                                <font>Podria interesarte</font>
-                                <br/>
-                            </h3>
-                            <hr class="w-100 mx-auto azul-energy"
-                                style="border-top-width: 1px; border-top-style: solid;"/>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap');
+                </style>
+                <section class="s_text_image gris-claro pb32 o_colored_level" data-snippet="s_image_text"
+                         data-name="Image - Text" style="background-image: none;">
+                    <div class=" gris-claro">
+                        <div class="col-lg-12" style="padding-right: 0px !important;">
+                            <img t-attf-src="data:image/jpg;base64,{{ id.image_1920 }}"
+                                 class="img img-fluid mx-auto" style="margin-right:0px !important;"/>
+                        </div>
+                        <div class=" ">
+                            <div class="col-lg-12 pb16 o_colored_level text-center"
+                                 style="padding-left:10%; padding-right:10%">
+
+                                <h4 class="o_default_snippet_text mt-3 azul-energy orbitron text-800"
+                                    style="font-weight: bolder;"
+                                    t-esc="id.name"></h4>
+
+                                <h6 class="o_default_snippet_text mt-3 text-600 "
+                                    style="text-align: justify !important; color:black !important;"
+                                    t-esc="id.description"></h6>
+                                <a
+                                        t-attf-href="/slides/#{slug(id)}"
+                                        class="btn btn_matricula background-azul color-letra"
+                                        style="border-radius:5px;">
+                                    Matricularme →
+                                </a>
 
 
+                                <!--                            <h3 class="azul-energy " style="text-align: center; margin-top:20px;">-->
+                                <!--                                <font>Podria interesarte</font>-->
+                                <!--                                <br/>-->
+                                <!--                            </h3>-->
+                                <hr class="w-100 mx-auto azul-energy"
+                                    style="border-top-width: 1px; border-top-style: solid;"/>
 
-                            <div style="display:none;">
-                            <div class="  flex_cursos">
-                                <t t-set="cursos" t-value="curso_list"/>
-                                <t t-foreach="cursos" t-as="curso">
 
-                                    <div class="col-lg-12 s_media_list_item  container-curso" data-name="Media item">
-                                        <a t-attf-href="/cursos/#{slug(curso)}" style="text-decoration:none;">
-                                            <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
-                                                 style="border-radius: 10px;">
-                                                <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
-                                                    <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
-                                                         class="s_media_list_img " alt="" loading="lazy"
-                                                         data-original-id="65"
-                                                         t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
+                                <div style="display:none;">
+                                    <div class="  flex_cursos">
+                                        <t t-set="cursos" t-value="curso_list"/>
+                                        <t t-foreach="cursos" t-as="curso">
 
-                                                         data-mimetype="image/jpeg"/>
-                                                </div>
+                                            <div class="col-lg-12 s_media_list_item  container-curso"
+                                                 data-name="Media item">
+                                                <a t-attf-href="/cursos/#{slug(curso)}" style="text-decoration:none;">
+                                                    <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
+                                                         style="border-radius: 10px;">
+                                                        <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                                            <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
+                                                                 class="s_media_list_img " alt="" loading="lazy"
+                                                                 data-original-id="65"
+                                                                 t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
 
-                                                <div class="col-lg-8 s_media_list_body">
-                                                    <h3 class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso "
-                                                        style="max-height:2.5em; overflow:hidden;" t-esc="curso.name">
-                                                        Acontecimientos
-                                                    </h3>
-                                                    <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
-                                                    <!--
+                                                                 data-mimetype="image/jpeg"/>
+                                                        </div>
 
-                                                                                                      t-esc="curso.name"></h4>-->
-                                                    <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
-                                                        <p t-esc="curso.description">
+                                                        <div class="col-lg-8 s_media_list_body">
+                                                            <h3 class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso "
+                                                                style="max-height:2.5em; overflow:hidden;"
+                                                                t-esc="curso.name">
+                                                                Acontecimientos
+                                                            </h3>
+                                                            <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
+                                                            <!--
 
-                                                        </p>
+                                                                                                              t-esc="curso.name"></h4>-->
+                                                            <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                                <p t-esc="curso.description">
+
+                                                                </p>
+                                                            </div>
+
+                                                            <!--                                                    <p class="o_default_snippet_text overflow-mobil   ">-->
+                                                            <!--                                                        <span t-foreach="curso.categoria_ids"-->
+                                                            <!--                                                              class="categoria color-letra"-->
+                                                            <!--                                                              t-as="categoria">-->
+                                                            <!--                                                            <t t-esc="categoria.name"/>-->
+
+                                                            <!--                                                        </span>-->
+                                                            <!--                                                    </p>-->
+
+
+                                                            <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
+                                                        </div>
                                                     </div>
-
-<!--                                                    <p class="o_default_snippet_text overflow-mobil   ">-->
-<!--                                                        <span t-foreach="curso.categoria_ids"-->
-<!--                                                              class="categoria color-letra"-->
-<!--                                                              t-as="categoria">-->
-<!--                                                            <t t-esc="categoria.name"/>-->
-
-<!--                                                        </span>-->
-<!--                                                    </p>-->
-
-
-                                                    <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
-                                                </div>
+                                                </a>
                                             </div>
-                                        </a>
+
+                                        </t>
                                     </div>
+                                </div>
+                                <!--                                            <div class="products_pager form-inline justify-content-center py-3">-->
+                                <!--                                                <t t-call="website.pager"/>-->
+                                <!--                                            </div>-->
 
-                                </t>
-                            </div>
-                            </div>
-<!--                                            <div class="products_pager form-inline justify-content-center py-3">-->
-<!--                                                <t t-call="website.pager"/>-->
-<!--                                            </div>-->
 
+                            </div>
 
                         </div>
 
+
                     </div>
 
 
+                </section>
+
+                <div class=" gris-claro busqueda-desk">
+                    <section class="s_carousel_wrapper container" data-vxml="001" data-snippet="s_carousel"
+                             data-name="Carrusel">
+                        <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000"
+                             id="myCarousel1695909670346" style="background-image: none;">
+
+                            <ol class="carousel-indicators o_we_no_overlay" style="display:none;">
+                                <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1695909670346"/>
+                                <t t-foreach="cursos" t-as="curso" t-item="curso_index">
+
+                                    <li t-att-data-bs-slide-to="curso_index"
+                                        t-attf-class="{{'active' if curso_index == 0 else ''}}"
+                                        t-att-data-bs-target="'#myCarousel' + str(curso_index)"/>
+                                </t>
+
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <t t-set="cursos" t-value="curso_list"/>
+                                <t t-foreach="cursos" t-as="curso">
+                                    <t t-set="contador" t-value="0"/>
+
+                                    <div t-attf-class="carousel-item container oe_img_bg o_bg_img_center o_colored_level {{'active' if curso_index == 0 else ''}} "
+
+                                         data-name="Slide">
+
+
+                                        <div class="  flex_cursos ">
+
+
+                                            <div class="col-lg-12 s_media_list_item  container-curso"
+                                                 data-name="Media item">
+                                                <a t-attf-href="/cursos/#{slug(curso)}" style="text-decoration:none;">
+                                                    <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
+                                                         style="border-radius: 10px;">
+                                                        <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                                            <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
+                                                                 class="s_media_list_img " alt="" loading="lazy"
+                                                                 data-original-id="65"
+
+                                                                 t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
+                                                                 data-mimetype="image/jpeg"/>
+                                                        </div>
+                                                        <!--                                                <p t-esc="curso_index"></p>-->
+
+                                                        <div class="col-lg-8 s_media_list_body">
+                                                            <h3 class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso "
+                                                                style="max-height:2.5em; overflow:hidden;"
+                                                                t-esc="curso.name">
+                                                                Acontecimientos
+                                                            </h3>
+                                                            <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
+                                                            <!--                                                    t-esc="curso.name"></h4>-->
+                                                            <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                                <p t-esc="curso.description">
+
+                                                                </p>
+                                                            </div>
+
+                                                            <!--                                                        <p class="o_default_snippet_text overflow-mobil   ">-->
+                                                            <!--                                                            <span t-foreach="curso.categoria_ids"-->
+                                                            <!--                                                                  class="categoria color-letra"-->
+                                                            <!--                                                                  t-as="categoria">-->
+                                                            <!--                                                                <t t-esc="categoria.name"/>-->
+
+                                                            <!--                                                            </span>-->
+                                                            <!--                                                        </p>-->
+
+
+                                                            <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!--cursos[curso_index + 1]-->
+                                            <!--                                 SEGUNDO ELEMENMTO DEL SLIDE -->
+
+                                            <div class="col-lg-12 s_media_list_item  container-curso"
+                                                 data-name="Media item">
+                                                <t t-set="next_index" t-value="curso_index + 1"/>
+                                                <t t-if="next_index &gt;= len(cursos)">
+
+                                                    <t t-set="next_index" t-value="0"/>
+
+                                                </t>
+
+                                                <t t-set="next_curso" t-value="cursos[next_index]"/>
+                                                <a t-attf-href="/cursos/#{slug(next_curso)}"
+                                                   style="text-decoration:none;">
+                                                    <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
+                                                         style="border-radius: 10px;">
+
+
+                                                        <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
+                                                            <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
+                                                                 class="s_media_list_img " alt="" loading="lazy"
+                                                                 data-original-id="65"
+
+                                                                 t-attf-src="data:image/jpg;base64,{{next_curso.image_1920}}"
+                                                                 data-mimetype="image/jpeg"/>
+                                                        </div>
+
+
+                                                        <div class="col-lg-8 s_media_list_body">
+                                                            <h3 class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso "
+                                                                style="max-height:2.5em; overflow:hidden;"
+                                                                t-esc="next_curso.name">
+                                                                Acontecimientos
+                                                            </h3>
+
+                                                            <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
+                                                                <p t-esc="curso.description">
+
+                                                                </p>
+                                                            </div>
+
+                                                            <!--                                                        <p class="o_default_snippet_text overflow-mobil   ">-->
+                                                            <!--                                                            <span t-foreach="next_curso.categoria_ids"-->
+                                                            <!--                                                                  class="categoria color-letra"-->
+                                                            <!--                                                                  t-as="categoria">-->
+                                                            <!--                                                                <t t-esc="categoria.name"/>-->
+
+                                                            <!--                                                            </span>-->
+                                                            <!--                                                        </p>-->
+
+
+                                                            <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
+                                                        </div>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </t>
+
+
+                                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev"
+                                   role="img"
+                                   aria-label="Anterior" title="Anterior" href="#myCarousel1695909670346">
+                                    <span class="carousel-control-prev-icon azul-energy"/>
+                                    <span class="visually-hidden o_default_snippet_text">Previous</span>
+                                </a>
+                                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next"
+                                   role="img"
+                                   aria-label="Siguiente" title="Siguiente" href="#myCarousel1695909670346">
+                                    <span class="carousel-control-next-icon"/>
+                                    <span class="visually-hidden o_default_snippet_text">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
 
 
-            </section>
+                <!--          todo:  ##########################################     SECCION DE SLIDER PARA MOBIL #############################-->
+                <div class=" gris-claro busqueda-mobil">
+                    <section class="s_carousel_wrapper container" data-vxml="001" data-snippet="s_carousel"
+                             data-name="Carrusel">
+                        <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000"
+                             id="myCarousel1695909670346" style="background-image: none;">
 
-            <div class=" gris-claro busqueda-desk">
-                <section class="s_carousel_wrapper container" data-vxml="001" data-snippet="s_carousel"
-                         data-name="Carrusel">
-                    <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000"
-                         id="myCarousel1695909670346" style="background-image: none;">
+                            <ol class="carousel-indicators o_we_no_overlay" style="display:none;">
+                                <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1695909670346"/>
+                                <t t-foreach="cursos" t-as="curso" t-item="curso_index">
 
-                        <ol class="carousel-indicators o_we_no_overlay" style="display:none;">
-                            <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1695909670346"/>
-                            <t t-foreach="cursos" t-as="curso" t-item="curso_index">
+                                    <li t-att-data-bs-slide-to="curso_index"
+                                        t-attf-class="{{'active' if curso_index == 0 else ''}}"
+                                        t-att-data-bs-target="'#myCarousel' + str(curso_index)"/>
+                                </t>
 
-                                <li t-att-data-bs-slide-to="curso_index"
-                                    t-attf-class="{{'active' if curso_index == 0 else ''}}"
-                                    t-att-data-bs-target="'#myCarousel' + str(curso_index)"/>
-                            </t>
+                            </ol>
 
-                        </ol>
+                            <div class="carousel-inner">
+                                <t t-set="cursos" t-value="curso_list"/>
+                                <t t-foreach="cursos" t-as="curso">
+                                    <t t-set="contador" t-value="0"/>
 
-                        <div class="carousel-inner">
-                            <t t-set="cursos" t-value="curso_list"/>
-                            <t t-foreach="cursos" t-as="curso">
-                                <t t-set="contador" t-value="0"/>
+                                    <div t-attf-class="carousel-item container oe_img_bg o_bg_img_center o_colored_level {{'active' if curso_index == 0 else ''}} "
 
-                                <div t-attf-class="carousel-item container oe_img_bg o_bg_img_center o_colored_level {{'active' if curso_index == 0 else ''}} "
-
-                                     data-name="Slide">
-
-
-                                    <div class="  flex_cursos ">
+                                         data-name="Slide">
 
 
                                         <div class="col-lg-12 s_media_list_item  container-curso"
@@ -162,220 +328,70 @@
                                                         <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
                                                         <!--                                                    t-esc="curso.name"></h4>-->
                                                         <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
-                                                        <p t-esc="curso.description">
+                                                            <p t-esc="curso.description">
 
-                                                        </p>
-                                                    </div>
+                                                            </p>
+                                                        </div>
 
-<!--                                                        <p class="o_default_snippet_text overflow-mobil   ">-->
-<!--                                                            <span t-foreach="curso.categoria_ids"-->
-<!--                                                                  class="categoria color-letra"-->
-<!--                                                                  t-as="categoria">-->
-<!--                                                                <t t-esc="categoria.name"/>-->
+                                                        <!--                                                <p class="o_default_snippet_text overflow-mobil   ">-->
+                                                        <!--                                                    <span t-foreach="curso.categoria_ids"-->
+                                                        <!--                                                          class="categoria color-letra"-->
+                                                        <!--                                                          t-as="categoria">-->
+                                                        <!--                                                        <t t-esc="categoria.name"/>-->
 
-<!--                                                            </span>-->
-<!--                                                        </p>-->
+                                                        <!--                                                    </span>-->
+                                                        <!--                                                </p>-->
 
 
                                                         <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
                                                     </div>
                                                 </div>
                                             </a>
+
                                         </div>
 
-                                        <!--cursos[curso_index + 1]-->
-                                        <!--                                 SEGUNDO ELEMENMTO DEL SLIDE -->
-
-                                        <div class="col-lg-12 s_media_list_item  container-curso"
-                                             data-name="Media item">
-                                            <t t-set="next_index" t-value="curso_index + 1"/>
-                                            <t t-if="next_index &gt;= len(cursos)">
-
-                                                <t t-set="next_index" t-value="0"/>
-
-                                            </t>
-
-                                            <t t-set="next_curso" t-value="cursos[next_index]"/>
-                                            <a t-attf-href="/cursos/#{slug(next_curso)}" style="text-decoration:none;">
-                                                <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
-                                                     style="border-radius: 10px;">
-
-
-                                                    <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
-                                                        <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
-                                                             class="s_media_list_img " alt="" loading="lazy"
-                                                             data-original-id="65"
-
-                                                             t-attf-src="data:image/jpg;base64,{{next_curso.image_1920}}"
-                                                             data-mimetype="image/jpeg"/>
-                                                    </div>
-
-
-                                                    <div class="col-lg-8 s_media_list_body">
-                                                        <h3 class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso "
-                                                            style="max-height:2.5em; overflow:hidden;"
-                                                            t-esc="next_curso.name">
-                                                            Acontecimientos
-                                                        </h3>
-
-                                                         <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
-                                                        <p t-esc="curso.description">
-
-                                                        </p>
-                                                    </div>
-
-<!--                                                        <p class="o_default_snippet_text overflow-mobil   ">-->
-<!--                                                            <span t-foreach="next_curso.categoria_ids"-->
-<!--                                                                  class="categoria color-letra"-->
-<!--                                                                  t-as="categoria">-->
-<!--                                                                <t t-esc="categoria.name"/>-->
-
-<!--                                                            </span>-->
-<!--                                                        </p>-->
-
-
-                                                        <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
-                                                    </div>
-
-                                                </div>
-                                            </a>
-                                        </div>
                                     </div>
-
-                                </div>
-
-                            </t>
+                                </t>
 
 
-                            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev"
-                               role="img"
-                               aria-label="Anterior" title="Anterior" href="#myCarousel1695909670346">
-                                <span class="carousel-control-prev-icon azul-energy"/>
-                                <span class="visually-hidden o_default_snippet_text">Previous</span>
-                            </a>
-                            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next"
-                               role="img"
-                               aria-label="Siguiente" title="Siguiente" href="#myCarousel1695909670346">
-                                <span class="carousel-control-next-icon"/>
-                                <span class="visually-hidden o_default_snippet_text">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-
-
-<!--          todo:  ##########################################     SECCION DE SLIDER PARA MOBIL #############################-->
-            <div class=" gris-claro busqueda-mobil">
-                <section class="s_carousel_wrapper container" data-vxml="001" data-snippet="s_carousel"
-                         data-name="Carrusel">
-                <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000"
-                     id="myCarousel1695909670346" style="background-image: none;">
-
-                    <ol class="carousel-indicators o_we_no_overlay" style="display:none;">
-                        <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1695909670346"/>
-                        <t t-foreach="cursos" t-as="curso" t-item="curso_index">
-
-                            <li t-att-data-bs-slide-to="curso_index"
-                                t-attf-class="{{'active' if curso_index == 0 else ''}}"
-                                t-att-data-bs-target="'#myCarousel' + str(curso_index)"/>
-                        </t>
-
-                    </ol>
-
-                    <div class="carousel-inner">
-                        <t t-set="cursos" t-value="curso_list"/>
-                        <t t-foreach="cursos" t-as="curso">
-                            <t t-set="contador" t-value="0"/>
-
-                            <div t-attf-class="carousel-item container oe_img_bg o_bg_img_center o_colored_level {{'active' if curso_index == 0 else ''}} "
-
-                                 data-name="Slide">
-
-
-                                <div class="col-lg-12 s_media_list_item  container-curso" data-name="Media item">
-                                    <a t-attf-href="/cursos/#{slug(curso)}" style="text-decoration:none;">
-                                        <div class="row s_col_no_resize h-100 s_col_no_bgcolor g-0 align-items-center o_cc o_cc1 o_colored_level"
-                                             style="border-radius: 10px;">
-                                            <div class="col-lg-4 align-self-stretch s_media_list_img_wrapper">
-                                                <img style="border-radius: 10px 0 0 10px; height:100%; width:100%;"
-                                                     class="s_media_list_img " alt="" loading="lazy"
-                                                     data-original-id="65"
-
-                                                     t-attf-src="data:image/jpg;base64,{{curso.image_1920}}"
-                                                     data-mimetype="image/jpeg"/>
-                                            </div>
-                                            <!--                                                <p t-esc="curso_index"></p>-->
-
-                                            <div class="col-lg-8 s_media_list_body">
-                                                <h3 class="o_default_snippet_text  azul-energy overflow-mobil max-height-curso "
-                                                    style="max-height:2.5em; overflow:hidden;" t-esc="curso.name">
-                                                    Acontecimientos
-                                                </h3>
-                                                <!--                                          <h4 class="card-title text-center o_default_snippet_text azul-energy text-left"-->
-                                                <!--                                                    t-esc="curso.name"></h4>-->
-                                                 <div class="o_default_snippet_text overflow-mobil overflow-text-curso">
-                                                        <p t-esc="curso.description">
-
-                                                        </p>
-                                                    </div>
-
-<!--                                                <p class="o_default_snippet_text overflow-mobil   ">-->
-<!--                                                    <span t-foreach="curso.categoria_ids"-->
-<!--                                                          class="categoria color-letra"-->
-<!--                                                          t-as="categoria">-->
-<!--                                                        <t t-esc="categoria.name"/>-->
-
-<!--                                                    </span>-->
-<!--                                                </p>-->
-
-
-                                                <!--                                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Descubrir</a>-->
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-
+                                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev"
+                                   role="img"
+                                   aria-label="Anterior" title="Anterior" href="#myCarousel1695909670346">
+                                    <span class="carousel-control-prev-icon"/>
+                                    <span class="visually-hidden o_default_snippet_text">Previous</span>
+                                </a>
+                                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next"
+                                   role="img"
+                                   aria-label="Siguiente" title="Siguiente" href="#myCarousel1695909670346">
+                                    <span class="carousel-control-next-icon"/>
+                                    <span class="visually-hidden o_default_snippet_text">Next</span>
+                                </a>
                             </div>
-                        </t>
-
-
-
-                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img"
-                       aria-label="Anterior" title="Anterior" href="#myCarousel1695909670346">
-                        <span class="carousel-control-prev-icon"/>
-                        <span class="visually-hidden o_default_snippet_text">Previous</span>
-                    </a>
-                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img"
-                       aria-label="Siguiente" title="Siguiente" href="#myCarousel1695909670346">
-                        <span class="carousel-control-next-icon"/>
-                        <span class="visually-hidden o_default_snippet_text">Next</span>
-                    </a>
+                        </div>
+                    </section>
                 </div>
-                </div>
-            </section>
-            </div>
 
 
+                <!--          todo:  ##########################################     fin SECCION DE SLIDER PARA MOBIL #############################-->
 
 
-<!--          todo:  ##########################################     fin SECCION DE SLIDER PARA MOBIL #############################-->
+            </t>
 
 
-
-
-
-        </t>
-    </template>
-
-
-    <record id="page_inner_curso_arengy" model="website.page">
-        <field name="name">Inner Curso</field>
-        <field name="website_published">True</field>
-        <field name="type">qweb</field>
-        <field name="url">/cursos</field>
-        <field name="view_id" ref="page_curso_inner"/>
+        </field>
     </record>
+
+
+    <!--    <template id="page_curso_inner" name="Inner curso">-->
+
+    <!--    </template>-->
+
+
+    <!--    <record id="page_inner_curso_arengy" model="website.page">-->
+    <!--        <field name="name">Inner Curso</field>-->
+    <!--        <field name="website_published">True</field>-->
+    <!--        <field name="type">qweb</field>-->
+    <!--        <field name="url">/cursos</field>-->
+    <!--        <field name="view_id" ref="page_curso_inner"/>-->
+    <!--    </record>-->
 </odoo>

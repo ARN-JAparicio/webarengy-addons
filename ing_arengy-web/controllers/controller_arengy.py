@@ -3,6 +3,7 @@ from odoo.addons.http_routing.models.ir_http import slug
 
 from odoo.http import request
 import logging
+import re
 _log = logging.getLogger(__name__)
 
 class WebArengy(http.Controller):
@@ -80,7 +81,7 @@ class WebArengy(http.Controller):
 
 
 
-        return request.render('ing_arengy-web.page_curso_inner', combined_values)
+        return request.render('ing_arengy-web.page_inner_curso_arengy', combined_values)
 
 
     @http.route(['/solucion', '/solucion/page/<string:page>'], type='http', auth="public", website=True)
@@ -158,11 +159,26 @@ class WebArengy(http.Controller):
 
         per_page = 3
 
-        domain = []
+        domain = [('is_published', '=', True)]
 
         logging.info(per_page)
 
         total_novedades = request.env['blog.post'].sudo().search(domain)
+
+        for rec in total_novedades:
+            logging.info('--------------cover properties .-----------------------------')
+
+            logging.info(rec.imagen_url)
+            logging.info(rec.cover_properties)
+
+            # Utilizar expresión regular para extraer la URL de la imagen
+            match = re.search(r'"background-image":"url\((.*?)\)"', rec.cover_properties)
+
+            if match:
+                rec.imagen_url = match.group(1)
+                logging.info(rec.imagen_url)
+            else:
+                logging.info("No se encontró ninguna URL de imagen de fondo en cover_properties.")
 
         for rec in total_novedades:
 
@@ -202,7 +218,7 @@ class WebArengy(http.Controller):
         novedad_context = dict(request.env.context, active_id=id_novedad.id, partner=request.env.user.partner_id)
         curso = id_novedad.with_context(novedad_context)
         kwargs.update({'id': id_novedad, 'main_object': curso})
-        domain = []
+        domain = [('is_published', '=', True)]
         cant = 3;
 
         novedades = request.env['blog.post'].sudo().search(domain, limit=cant)

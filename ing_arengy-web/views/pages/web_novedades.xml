@@ -49,6 +49,12 @@
 <!--                                                   t-esc="post.desc"></p>-->
                                                 <h3 class="card-title text-center o_default_snippet_text azul-energy text-left"
                                                     t-esc="novedad.name"></h3>
+
+                                                 <div class="col-lg-12" style="padding-right: 0px !important;">
+                                                    <img t-att-src="novedad.imagen_url"
+                                                         class="img img-fluid mx-auto"
+                                                         style="margin-right:0px !important;"/>
+                                                </div>
                                             </div>
 
 
@@ -71,13 +77,7 @@
                                                 </p>
                                              </div>
 
-                                            <div class="text-center">
 
-                                                <h5  t-esc="novedad.create_date.strftime('%d %B %Y')" class="azul-energy">
-
-                                                </h5>
-
-                                            </div>
 
                                         </div>
                                     </a>
